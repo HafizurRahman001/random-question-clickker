@@ -40,6 +40,11 @@
   margin: 7px 0px;
   color: rgb(255 255 255);
   text-shadow: 3px 2px 3px black;
+  padding: 5px 0px;
+}
+
+#subject_heading {
+  text-transform: uppercase;
 }
 
 .our_services_section {
@@ -68,6 +73,10 @@
   margin: 10px;
   border-radius: 7px;
   padding: 10px;
+  color: white;
+}
+.service p {
+  color: #afadad;
 }
 .service:hover {
   background-color: #0d0a29;
@@ -102,6 +111,8 @@ tr {
 
 .result_header h1 {
   font-weight: bold;
+  color: #ff3c19;
+  text-shadow: 1px 0.1rem 0px black;
 }
 
 .table_header {
@@ -121,6 +132,12 @@ tr {
 .table-dark {
   --bs-table-bg: #000000 !important;
 }
+#ask_question {
+  background-color: rgb(25, 7, 218) !important;
+  padding: 9px 15px;
+  font-size: 18px;
+}
+
 button:hover {
   background-color: rgb(25, 7, 218) !important;
 }
@@ -138,11 +155,25 @@ button:hover {
 }
 .footer_section {
   background-color: #122628;
-  color: #138dbd;
-  margin-top: 30px;
+  color: #beedff;
+  margin-top: 45px;
 }
 .footer {
   padding: 20px 0px;
+}
+
+#show {
+  /* text-align: right; */
+  animation: left_to_right 3s ease;
+}
+
+@keyframes left_to_right {
+  from {
+    margin-left: -100%;
+  }
+  to {
+    margin-left: 0;
+  }
 }
 
 /* media query for all device */
@@ -160,6 +191,9 @@ button:hover {
   }
   .result_header {
     width: 92%;
+  }
+  .result_header h1 {
+    font-size: 25px;
   }
   #show,
   #index {

@@ -129,6 +129,21 @@ button:hover {
   font-size: 28px;
   font-family: "Asap", sans-serif;
 }
+.question_img {
+  width: 85%;
+  height: 169px;
+  margin: auto;
+  filter: invert(39%) sepia(90%) saturate(614%) hue-rotate(156deg)
+    brightness(97%) contrast(89%);
+}
+.footer_section {
+  background-color: #122628;
+  color: #138dbd;
+  margin-top: 30px;
+}
+.footer {
+  padding: 20px 0px;
+}
 
 /* media query for all device */
 

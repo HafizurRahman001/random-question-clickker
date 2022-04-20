@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=El+Messiri&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Asap:ital@1&display=swap");
+
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./Images/heroImage.jpg");
+  height: 350px;
+  background-position: center 52%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero_text {
+  width: 70%;
+  display: grid;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  font-family: "El Messiri", sans-serif;
+}
+
+.hero_text h2 {
+  font-size: 49px;
+  font-weight: bold;
+  text-shadow: 2px 1px 3px #ff2700;
+}
+
+.heder_section {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255 32 118);
+  margin: 7px 0px;
+  color: rgb(255 255 255);
+  text-shadow: 3px 2px 3px black;
+}
+
+.our_services_section {
+  background-color: rgb(5 2 34 / 97%);
+  color: rgb(157, 157, 157);
+  font-family: "Poppins", sans-serif;
+}
+
+.service_img {
+  display: inline-block;
+  filter: invert(39%) sepia(90%) saturate(614%) hue-rotate(156deg)
+    brightness(97%) contrast(89%);
+}
+.service_image {
+  width: 150px;
+  margin: auto;
+}
+.service_image img {
+  width: 150px;
+  height: 120px;
+  padding: 10px 0px;
+}
+.service {
+  background-color: rgb(8 3 61);
+  border: 1px solid #373636;
+  margin: 10px;
+  border-radius: 7px;
+  padding: 10px;
+}
+.service:hover {
+  background-color: #0d0a29;
+}
+.service_header h4 {
+  text-align: center;
+}
+.service button,
+.btn-primary {
+  color: #fff;
+  background-color: #138dbd6e !important;
+  border-color: #403e51;
+}
+.table_result tbody,
+td,
+tfoot,
+th,
+thead,
+tr {
+  border-width: 1px !important;
+}
+
+.click_btn {
+  background-color: #08033d !important;
+}
+.result_header {
+  padding: 30px 0px;
+  width: 50%;
+  margin: auto;
+  text-align: center;
+}
+
+.result_header h1 {
+  font-weight: bold;
+}
+
+.table_header {
+  width: 90%;
+  text-align: center;
+  font-size: 23px;
+}
+.index_header {
+  text-align: center;
+  font-size: 23px;
+}
+.table_second_td {
+  text-align: center;
+  font-weight: bold;
+  color: yellow !important;
+}
+.table-dark {
+  --bs-table-bg: #000000 !important;
+}
+button:hover {
+  background-color: rgb(25, 7, 218) !important;
+}
+#show,
+#index {
+  font-size: 28px;
+  font-family: "Asap", sans-serif;
+}
+
+/* media query for all device */
+
+@media only screen and (max-width: 688px) {
+  .hero {
+    height: 200px;
+  }
+  .hero_text {
+    width: 85%;
+    text-align: center;
+  }
+  .hero_text h2 {
+    font-size: 27px;
+  }
+  .result_header {
+    width: 92%;
+  }
+  #show,
+  #index {
+    font-size: 20px;
+    font-family: "Asap", sans-serif;
+  }
+  .table_header,
+  .index_header {
+    font-size: 18px;
+  }
+}

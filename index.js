@@ -17,6 +17,7 @@ const showYear = document.getElementById('show_year');
 const answerQuestion = document.getElementById('ans_question');
 
 
+
 // select dom from switch button
 const switchButton1 = document.getElementById('switch1');
 const switchButton2 = document.getElementById('switch2');
@@ -45,6 +46,13 @@ let numberStrings;  // array element is set globally in this variable by conditi
 let final;
 
 const switchFunction = subject => {
+
+    // page scroll after a certain time [using invoke function for immediate call]
+    (function x() {
+        setTimeout(function () {
+            showSubject.scrollIntoView(); // the main function that scroll the page to a certain element
+        }, 600);
+    })()
 
     //add timer by clicking switch button
     setTimerUpdate();

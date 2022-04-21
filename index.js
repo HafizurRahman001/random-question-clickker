@@ -8,6 +8,33 @@ const subjectHeading = document.getElementById('subject_heading');
 const showSubject = document.getElementById('show_subject');
 const showSubjectSection = document.getElementById('show_subject_section');
 const showTime = document.getElementById('show_time');
+const setTimer = document.getElementById('timer');
+const timerShowModal = document.getElementById('timer_show_modal');
+const showDate = document.getElementById('show_date');
+const showWeek = document.getElementById('show_week');
+const showMonth = document.getElementById('show_month');
+const showYear = document.getElementById('show_year');
+
+
+// select dom from switch button
+const switchButton1 = document.getElementById('switch1');
+const switchButton2 = document.getElementById('switch2');
+const switchButton3 = document.getElementById('switch3');
+const switchButton4 = document.getElementById('switch4');
+const switchButton5 = document.getElementById('switch5');
+const switchButton6 = document.getElementById('switch6');
+const switchButton7 = document.getElementById('switch7');
+const switchButton8 = document.getElementById('switch8');
+const switchButton9 = document.getElementById('switch9');
+const switchButton10 = document.getElementById('switch10');
+const switchButton11 = document.getElementById('switch11');
+const switchButton12 = document.getElementById('switch12');
+
+
+
+
+
+
 
 
 
@@ -17,6 +44,449 @@ let numberStrings;  // array element is set globally in this variable by conditi
 let final;
 
 const switchFunction = subject => {
+
+    //add timer by clicking switch button
+    setTimerUpdate();
+
+    //condition for switch button styling
+    switch (subject) {
+        case 'crystallography':
+            //add style to selected id
+            switchButton1.classList.add('switch_btn_style');
+
+            //remove style from others id
+            switchButton2.classList.remove('switch_btn_style');
+            switchButton3.classList.remove('switch_btn_style');
+            switchButton4.classList.remove('switch_btn_style');
+            switchButton5.classList.remove('switch_btn_style');
+            switchButton6.classList.remove('switch_btn_style');
+            switchButton7.classList.remove('switch_btn_style');
+            switchButton8.classList.remove('switch_btn_style');
+            switchButton9.classList.remove('switch_btn_style');
+            switchButton10.classList.remove('switch_btn_style');
+            switchButton11.classList.remove('switch_btn_style');
+            switchButton12.classList.remove('switch_btn_style');
+
+
+            // switch button inner html change after selecting
+            switchButton1.innerHTML = 'Selected'
+
+            //other will be stay switch
+            switchButton2.innerHTML = 'Switch';
+            switchButton3.innerHTML = 'Switch';
+            switchButton4.innerHTML = 'Switch';
+            switchButton5.innerHTML = 'Switch';
+            switchButton6.innerHTML = 'Switch';
+            switchButton6.innerHTML = 'Switch';
+            switchButton7.innerHTML = 'Switch';
+            switchButton8.innerHTML = 'Switch';
+            switchButton9.innerHTML = 'Switch';
+            switchButton10.innerHTML = 'Switch';
+            switchButton11.innerHTML = 'Switch';
+            switchButton12.innerHTML = 'Switch';
+
+            break;
+
+        case 'stratigraphy':
+            switchButton2.classList.add('switch_btn_style');
+
+            //remove style from others id
+            switchButton1.classList.remove('switch_btn_style');
+            switchButton3.classList.remove('switch_btn_style');
+            switchButton4.classList.remove('switch_btn_style');
+            switchButton5.classList.remove('switch_btn_style');
+            switchButton6.classList.remove('switch_btn_style');
+            switchButton7.classList.remove('switch_btn_style');
+            switchButton8.classList.remove('switch_btn_style');
+            switchButton9.classList.remove('switch_btn_style');
+            switchButton10.classList.remove('switch_btn_style');
+            switchButton11.classList.remove('switch_btn_style');
+            switchButton12.classList.remove('switch_btn_style');
+
+
+            // switch button inner html change after selecting
+            switchButton2.innerHTML = 'Selected'
+
+            //other will be stay switch
+            switchButton1.innerHTML = 'Switch';
+            switchButton3.innerHTML = 'Switch';
+            switchButton4.innerHTML = 'Switch';
+            switchButton5.innerHTML = 'Switch';
+            switchButton6.innerHTML = 'Switch';
+            switchButton6.innerHTML = 'Switch';
+            switchButton7.innerHTML = 'Switch';
+            switchButton8.innerHTML = 'Switch';
+            switchButton9.innerHTML = 'Switch';
+            switchButton10.innerHTML = 'Switch';
+            switchButton11.innerHTML = 'Switch';
+
+            break;
+
+        case 'p.s.p':
+            switchButton8.classList.add('switch_btn_style');
+
+            //remove style from others id
+            switchButton1.classList.remove('switch_btn_style');
+            switchButton2.classList.remove('switch_btn_style');
+            switchButton3.classList.remove('switch_btn_style');
+            switchButton4.classList.remove('switch_btn_style');
+            switchButton5.classList.remove('switch_btn_style');
+            switchButton6.classList.remove('switch_btn_style');
+            switchButton7.classList.remove('switch_btn_style');
+            switchButton9.classList.remove('switch_btn_style');
+            switchButton10.classList.remove('switch_btn_style');
+            switchButton11.classList.remove('switch_btn_style');
+            switchButton12.classList.remove('switch_btn_style');
+
+
+            // switch button inner html change after selecting
+            switchButton8.innerHTML = 'Selected'
+
+            //other will be stay switch
+            switchButton1.innerHTML = 'Switch';
+            switchButton2.innerHTML = 'Switch';
+            switchButton3.innerHTML = 'Switch';
+            switchButton4.innerHTML = 'Switch';
+            switchButton5.innerHTML = 'Switch';
+            switchButton6.innerHTML = 'Switch';
+            switchButton6.innerHTML = 'Switch';
+            switchButton7.innerHTML = 'Switch';
+            switchButton9.innerHTML = 'Switch';
+            switchButton10.innerHTML = 'Switch';
+            switchButton11.innerHTML = 'Switch';
+            switchButton12.innerHTML = 'Switch';
+
+
+            break;
+
+        case 'd.s.p':
+            switchButton7.classList.add('switch_btn_style');
+
+            //remove style from others id
+            switchButton1.classList.remove('switch_btn_style');
+            switchButton2.classList.remove('switch_btn_style');
+            switchButton3.classList.remove('switch_btn_style');
+            switchButton4.classList.remove('switch_btn_style');
+            switchButton5.classList.remove('switch_btn_style');
+            switchButton6.classList.remove('switch_btn_style');
+            switchButton8.classList.remove('switch_btn_style');
+            switchButton9.classList.remove('switch_btn_style');
+            switchButton10.classList.remove('switch_btn_style');
+            switchButton11.classList.remove('switch_btn_style');
+            switchButton12.classList.remove('switch_btn_style');
+
+
+            // switch button inner html change after selecting
+            switchButton7.innerHTML = 'Selected'
+
+            //other will be stay switch
+            switchButton1.innerHTML = 'Switch';
+            switchButton2.innerHTML = 'Switch';
+            switchButton3.innerHTML = 'Switch';
+            switchButton4.innerHTML = 'Switch';
+            switchButton5.innerHTML = 'Switch';
+            switchButton6.innerHTML = 'Switch';
+            switchButton6.innerHTML = 'Switch';
+            switchButton8.innerHTML = 'Switch';
+            switchButton9.innerHTML = 'Switch';
+            switchButton10.innerHTML = 'Switch';
+            switchButton11.innerHTML = 'Switch';
+            switchButton12.innerHTML = 'Switch';
+
+
+            break;
+
+        case 'mathematics':
+            switchButton12.classList.add('switch_btn_style');
+
+            //remove style from others id
+            switchButton1.classList.remove('switch_btn_style');
+            switchButton2.classList.remove('switch_btn_style');
+            switchButton3.classList.remove('switch_btn_style');
+            switchButton4.classList.remove('switch_btn_style');
+            switchButton5.classList.remove('switch_btn_style');
+            switchButton6.classList.remove('switch_btn_style');
+            switchButton7.classList.remove('switch_btn_style');
+            switchButton8.classList.remove('switch_btn_style');
+            switchButton9.classList.remove('switch_btn_style');
+            switchButton10.classList.remove('switch_btn_style');
+            switchButton11.classList.remove('switch_btn_style');
+
+
+            // switch button inner html change after selecting
+            switchButton12.innerHTML = 'Selected'
+
+            //other will be stay switch
+            switchButton1.innerHTML = 'Switch';
+            switchButton2.innerHTML = 'Switch';
+            switchButton3.innerHTML = 'Switch';
+            switchButton4.innerHTML = 'Switch';
+            switchButton5.innerHTML = 'Switch';
+            switchButton6.innerHTML = 'Switch';
+            switchButton6.innerHTML = 'Switch';
+            switchButton7.innerHTML = 'Switch';
+            switchButton8.innerHTML = 'Switch';
+            switchButton9.innerHTML = 'Switch';
+            switchButton10.innerHTML = 'Switch';
+            switchButton11.innerHTML = 'Switch';
+
+            break;
+
+        case 'optical-mineralogy':
+            switchButton11.classList.add('switch_btn_style');
+
+            //remove style from others id
+            switchButton1.classList.remove('switch_btn_style');
+            switchButton2.classList.remove('switch_btn_style');
+            switchButton3.classList.remove('switch_btn_style');
+            switchButton4.classList.remove('switch_btn_style');
+            switchButton5.classList.remove('switch_btn_style');
+            switchButton6.classList.remove('switch_btn_style');
+            switchButton7.classList.remove('switch_btn_style');
+            switchButton8.classList.remove('switch_btn_style');
+            switchButton9.classList.remove('switch_btn_style');
+            switchButton10.classList.remove('switch_btn_style');
+            switchButton12.classList.remove('switch_btn_style');
+
+
+            // switch button inner html change after selecting
+            switchButton11.innerHTML = 'Selected'
+
+            //other will be stay switch
+            switchButton1.innerHTML = 'Switch';
+            switchButton2.innerHTML = 'Switch';
+            switchButton3.innerHTML = 'Switch';
+            switchButton4.innerHTML = 'Switch';
+            switchButton5.innerHTML = 'Switch';
+            switchButton6.innerHTML = 'Switch';
+            switchButton6.innerHTML = 'Switch';
+            switchButton7.innerHTML = 'Switch';
+            switchButton8.innerHTML = 'Switch';
+            switchButton9.innerHTML = 'Switch';
+            switchButton10.innerHTML = 'Switch';
+            switchButton12.innerHTML = 'Switch';
+
+            break;
+
+        case 'hydrology(IM)':
+            switchButton10.classList.add('switch_btn_style');
+
+            //remove style from others id
+            switchButton1.classList.remove('switch_btn_style');
+            switchButton2.classList.remove('switch_btn_style');
+            switchButton3.classList.remove('switch_btn_style');
+            switchButton4.classList.remove('switch_btn_style');
+            switchButton5.classList.remove('switch_btn_style');
+            switchButton6.classList.remove('switch_btn_style');
+            switchButton7.classList.remove('switch_btn_style');
+            switchButton8.classList.remove('switch_btn_style');
+            switchButton9.classList.remove('switch_btn_style');
+            switchButton11.classList.remove('switch_btn_style');
+            switchButton12.classList.remove('switch_btn_style');
+
+
+            // switch button inner html change after selecting
+            switchButton10.innerHTML = 'Selected'
+
+            //other will be stay switch
+            switchButton1.innerHTML = 'Switch';
+            switchButton2.innerHTML = 'Switch';
+            switchButton3.innerHTML = 'Switch';
+            switchButton4.innerHTML = 'Switch';
+            switchButton5.innerHTML = 'Switch';
+            switchButton6.innerHTML = 'Switch';
+            switchButton6.innerHTML = 'Switch';
+            switchButton7.innerHTML = 'Switch';
+            switchButton8.innerHTML = 'Switch';
+            switchButton9.innerHTML = 'Switch';
+            switchButton11.innerHTML = 'Switch';
+            switchButton12.innerHTML = 'Switch';
+
+            break;
+
+        case 'hydrology(sg)':
+            switchButton9.classList.add('switch_btn_style');
+
+            //remove style from others id
+            switchButton1.classList.remove('switch_btn_style');
+            switchButton2.classList.remove('switch_btn_style');
+            switchButton3.classList.remove('switch_btn_style');
+            switchButton4.classList.remove('switch_btn_style');
+            switchButton5.classList.remove('switch_btn_style');
+            switchButton6.classList.remove('switch_btn_style');
+            switchButton7.classList.remove('switch_btn_style');
+            switchButton8.classList.remove('switch_btn_style');
+            switchButton10.classList.remove('switch_btn_style');
+            switchButton11.classList.remove('switch_btn_style');
+            switchButton12.classList.remove('switch_btn_style');
+
+
+            // switch button inner html change after selecting
+            switchButton9.innerHTML = 'Selected'
+
+            //other will be stay switch
+            switchButton1.innerHTML = 'Switch';
+            switchButton2.innerHTML = 'Switch';
+            switchButton3.innerHTML = 'Switch';
+            switchButton4.innerHTML = 'Switch';
+            switchButton5.innerHTML = 'Switch';
+            switchButton6.innerHTML = 'Switch';
+            switchButton6.innerHTML = 'Switch';
+            switchButton7.innerHTML = 'Switch';
+            switchButton8.innerHTML = 'Switch';
+            switchButton10.innerHTML = 'Switch';
+            switchButton11.innerHTML = 'Switch';
+            switchButton12.innerHTML = 'Switch';
+
+            break;
+
+        case 'environmental-chemistry':
+            switchButton6.classList.add('switch_btn_style');
+
+            //remove style from others id
+            switchButton1.classList.remove('switch_btn_style');
+            switchButton2.classList.remove('switch_btn_style');
+            switchButton3.classList.remove('switch_btn_style');
+            switchButton4.classList.remove('switch_btn_style');
+            switchButton5.classList.remove('switch_btn_style');
+            switchButton7.classList.remove('switch_btn_style');
+            switchButton8.classList.remove('switch_btn_style');
+            switchButton9.classList.remove('switch_btn_style');
+            switchButton10.classList.remove('switch_btn_style');
+            switchButton11.classList.remove('switch_btn_style');
+            switchButton12.classList.remove('switch_btn_style');
+
+
+            // switch button inner html change after selecting
+            switchButton6.innerHTML = 'Selected'
+
+            //other will be stay switch
+            switchButton1.innerHTML = 'Switch';
+            switchButton2.innerHTML = 'Switch';
+            switchButton3.innerHTML = 'Switch';
+            switchButton4.innerHTML = 'Switch';
+            switchButton5.innerHTML = 'Switch';
+            switchButton7.innerHTML = 'Switch';
+            switchButton8.innerHTML = 'Switch';
+            switchButton9.innerHTML = 'Switch';
+            switchButton10.innerHTML = 'Switch';
+            switchButton11.innerHTML = 'Switch';
+            switchButton12.innerHTML = 'Switch';
+
+            break;
+
+        case 'physics-2':
+            switchButton4.classList.add('switch_btn_style');
+
+            //remove style from others id
+            switchButton1.classList.remove('switch_btn_style');
+            switchButton2.classList.remove('switch_btn_style');
+            switchButton3.classList.remove('switch_btn_style');
+            switchButton5.classList.remove('switch_btn_style');
+            switchButton6.classList.remove('switch_btn_style');
+            switchButton7.classList.remove('switch_btn_style');
+            switchButton8.classList.remove('switch_btn_style');
+            switchButton9.classList.remove('switch_btn_style');
+            switchButton10.classList.remove('switch_btn_style');
+            switchButton11.classList.remove('switch_btn_style');
+            switchButton12.classList.remove('switch_btn_style');
+
+
+            // switch button inner html change after selecting
+            switchButton4.innerHTML = 'Selected'
+
+            //other will be stay switch
+            switchButton1.innerHTML = 'Switch';
+            switchButton2.innerHTML = 'Switch';
+            switchButton3.innerHTML = 'Switch';
+            switchButton5.innerHTML = 'Switch';
+            switchButton6.innerHTML = 'Switch';
+            switchButton6.innerHTML = 'Switch';
+            switchButton7.innerHTML = 'Switch';
+            switchButton8.innerHTML = 'Switch';
+            switchButton9.innerHTML = 'Switch';
+            switchButton10.innerHTML = 'Switch';
+            switchButton11.innerHTML = 'Switch';
+            switchButton12.innerHTML = 'Switch';
+
+            break;
+
+        case 'physics-3':
+            switchButton5.classList.add('switch_btn_style');
+
+            //remove style from others id
+            switchButton1.classList.remove('switch_btn_style');
+            switchButton2.classList.remove('switch_btn_style');
+            switchButton3.classList.remove('switch_btn_style');
+            switchButton4.classList.remove('switch_btn_style');
+            switchButton6.classList.remove('switch_btn_style');
+            switchButton7.classList.remove('switch_btn_style');
+            switchButton8.classList.remove('switch_btn_style');
+            switchButton9.classList.remove('switch_btn_style');
+            switchButton10.classList.remove('switch_btn_style');
+            switchButton11.classList.remove('switch_btn_style');
+            switchButton12.classList.remove('switch_btn_style');
+
+
+            // switch button inner html change after selecting
+            switchButton5.innerHTML = 'Selected'
+
+            //other will be stay switch
+            switchButton1.innerHTML = 'Switch';
+            switchButton2.innerHTML = 'Switch';
+            switchButton3.innerHTML = 'Switch';
+            switchButton4.innerHTML = 'Switch';
+            switchButton6.innerHTML = 'Switch';
+            switchButton6.innerHTML = 'Switch';
+            switchButton7.innerHTML = 'Switch';
+            switchButton8.innerHTML = 'Switch';
+            switchButton9.innerHTML = 'Switch';
+            switchButton10.innerHTML = 'Switch';
+            switchButton11.innerHTML = 'Switch';
+            switchButton12.innerHTML = 'Switch';
+
+            break;
+
+        case 'programming':
+            switchButton3.classList.add('switch_btn_style');
+
+            //remove style from others id
+            switchButton1.classList.remove('switch_btn_style');
+            switchButton2.classList.remove('switch_btn_style');
+            switchButton4.classList.remove('switch_btn_style');
+            switchButton5.classList.remove('switch_btn_style');
+            switchButton6.classList.remove('switch_btn_style');
+            switchButton7.classList.remove('switch_btn_style');
+            switchButton8.classList.remove('switch_btn_style');
+            switchButton9.classList.remove('switch_btn_style');
+            switchButton10.classList.remove('switch_btn_style');
+            switchButton11.classList.remove('switch_btn_style');
+            switchButton12.classList.remove('switch_btn_style');
+
+
+            // switch button inner html change after selecting
+            switchButton3.innerHTML = 'Selected'
+
+            //other will be stay switch
+            switchButton1.innerHTML = 'Switch';
+            switchButton2.innerHTML = 'Switch';
+            switchButton4.innerHTML = 'Switch';
+            switchButton5.innerHTML = 'Switch';
+            switchButton6.innerHTML = 'Switch';
+            switchButton6.innerHTML = 'Switch';
+            switchButton7.innerHTML = 'Switch';
+            switchButton8.innerHTML = 'Switch';
+            switchButton9.innerHTML = 'Switch';
+            switchButton10.innerHTML = 'Switch';
+            switchButton11.innerHTML = 'Switch';
+            switchButton12.innerHTML = 'Switch';
+
+            break;
+    }
+
+
+
+    //conditions for array
     if (subject === 'mathematics') {
         numberStrings = mathematicsArray;
         subjectHeading.innerHTML = subject;
@@ -41,15 +511,15 @@ const switchFunction = subject => {
         numberStrings = dspArray;
         subjectHeading.innerHTML = subject;
         showSubject.innerHTML = subject;
-    } else if (subject === 'environmental_chemistry') {
+    } else if (subject === 'environmental-chemistry') {
         numberStrings = chemistryArray;
         subjectHeading.innerHTML = subject;
         showSubject.innerHTML = subject;
-    } else if (subject === 'physics_3') {
+    } else if (subject === 'physics-3') {
         numberStrings = physics_3_Array;
         subjectHeading.innerHTML = subject;
         showSubject.innerHTML = subject;
-    } else if (subject === 'physics_2') {
+    } else if (subject === 'physics-2') {
         numberStrings = physics_2_Array;
         subjectHeading.innerHTML = subject;
         showSubject.innerHTML = subject;
@@ -98,10 +568,8 @@ const switchFunction = subject => {
 let curElement = 0;
 let arr = [];
 
-
 // main function for showing unique and random value on browser
 const updateRandomNumber = () => {
-
     indexOfArr.innerHTML = numberStrings.length - 1;
 
     // store unique value in empty array
@@ -116,7 +584,6 @@ const updateRandomNumber = () => {
     let newElement = arr[curElement++];
     console.log('element', newElement);
 
-
     // shows the result one by one in browser
     document.getElementById('show').innerHTML = numberStrings[newElement++];
     if (curElement == numberStrings.length) {
@@ -128,7 +595,6 @@ const updateRandomNumber = () => {
     final--;
     indexOfArr.innerHTML = final;
 
-
     // condition for open modal
     if (final < 0) {
 
@@ -137,11 +603,17 @@ const updateRandomNumber = () => {
 
         // open the modal by auto clicking
         finish.click()
+
+        //show array length to modal
         allQuestion.innerHTML = numberStrings.length;
+
+        // show timer to modals
+        timerShowModal.innerHTML = displayTime;
 
         // it is use to covert -1 index to
         indexOfArr.innerHTML = final + 1;
-
+        //close timer
+        clearInterval(timer)
     }
 }
 
@@ -159,7 +631,6 @@ const timeSet = () => {
         h = 12;
     }
 
-
     //condition for 24 hours
     if (h > 12) {
         h = h - 12;
@@ -171,9 +642,43 @@ const timeSet = () => {
     m = (m < 10) ? "0" + m : m;
     s = (s < 10) ? "0" + s : s;
 
-
+    //show the time to browser
     const time = h + ":" + m + ":" + s + " " + session;
     showTime.innerHTML = time;
+
+
+    //get date
+    let monthName;
+    let monthDigit = date.getMonth();
+    if (monthDigit === 0) {
+        monthName = 'Jan'
+    } else if (monthDigit === 1) {
+        monthName = 'Feb'
+    } else if (monthDigit === 2) {
+        monthName = 'Mar'
+    } else if (monthDigit === 3) {
+        monthName = 'Apr'
+    } else if (monthDigit === 4) {
+        monthName = 'May'
+    } else if (monthDigit === 5) {
+        monthName = "Jun"
+    } else if (monthDigit === 6) {
+        monthName = 'Jul'
+    } else if (monthDigit === 7) {
+        monthName = 'Aug'
+    } else if (monthDigit === 8) {
+        monthName = 'Sep'
+    } else if (monthDigit === 9) {
+        monthName = 'Oct'
+    } else if (monthDigit === 10) {
+        monthName = 'Nov'
+    } else if (monthDigit === 11) {
+        monthName = 'Dec'
+    }
+    showWeek.innerHTML = date.toString().slice(0, 3);
+    showDate.innerHTML = date.getDate();
+    showMonth.innerHTML = monthName;
+    showYear.innerHTML = date.getFullYear();
 }
 //call the timeSet function
 setInterval(timeSet, 1000);
@@ -183,6 +688,42 @@ const closeButton = () => {
     window.location.reload();
 }
 
+
+// add timer to browser
+let timer;
+let displayTime;
+
+const setTimerUpdate = () => {
+    let sec = 0;
+    timer = setInterval(() => {
+
+        d = sec
+        var h = Math.floor(d / 3600);
+        var m = Math.floor(d % 3600 / 60);
+        var s = Math.floor(d % 3600 % 60);
+
+        if (h < 10) {
+            h = "0" + h;
+        }
+        if (m < 10) {
+            m = "0" + m;
+        }
+        if (s < 10) {
+            s = "0" + s;
+        }
+
+        // var hDisplay = h > 0 ? h + (h == 1 ? " hour, " : " hours, ") : "";
+        // var mDisplay = m > 0 ? m + (m == 1 ? " minute, " : " minutes, ") : "";
+        // var sDisplay = s > 0 ? s + (s == 1 ? " second" : " seconds") : "";
+        // displayTime = hDisplay + mDisplay + sDisplay;
+        displayTime = h + ":" + m + ":" + s;
+
+        //show timer to browser
+        setTimer.innerHTML = displayTime;
+        sec++; //increase timer one for every interval
+
+    }, 1000)
+}
 
 
 

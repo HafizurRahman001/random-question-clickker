@@ -130,8 +130,7 @@ tr {
 
 .result_header h1 {
   font-weight: bold;
-  color: #ff3668;
-  text-shadow: 1px 0.1rem 0px black;
+  color: #000000;
 }
 
 .table_header {
@@ -172,6 +171,7 @@ tr {
   font-family: "Asap", sans-serif;
   text-transform: capitalize;
 }
+
 .question_img {
   width: 85%;
   height: 169px;
@@ -220,7 +220,7 @@ tr {
     font-size: 27px;
   }
   .result_header {
-    width: 92%;
+    width: 100%;
   }
   .result_header h1 {
     font-size: 25px;
@@ -245,5 +245,8 @@ tr {
     font-size: 10px;
     margin: 0;
     color: white;
+  }
+  #subject_heading {
+    font-size: 23px;
   }
 }

@@ -199,6 +199,7 @@ tr {
   align-items: center;
   min-height: 30px;
 }
+
 .show_subject h3 {
   background-color: #d1d1d1;
   padding: 6px 21px;
@@ -224,9 +225,10 @@ tr {
   color: #0045ff;
   font-weight: 500;
   border: 1px solid black;
-  padding: 1px 6px;
+  padding: 2px 5px;
   border-radius: 57%;
   display: inline-block;
+  /* text-decoration: underline; */
 }
 
 /* customize bootstrap css style */

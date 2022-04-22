@@ -54,8 +54,7 @@ const switchFunction = subject => {
         }, 600);
     })()
 
-    //add timer by clicking switch button
-    setTimerUpdate();
+
 
     //condition for switch button styling
     switch (subject) {
@@ -94,6 +93,12 @@ const switchFunction = subject => {
             switchButton11.innerHTML = 'Switch';
             switchButton12.innerHTML = 'Switch';
 
+            //close timer
+            clearInterval(timer);
+
+            //add timer by clicking switch button
+            setTimerUpdate();
+
             break;
 
         case 'stratigraphy':
@@ -128,6 +133,12 @@ const switchFunction = subject => {
             switchButton9.innerHTML = 'Switch';
             switchButton10.innerHTML = 'Switch';
             switchButton11.innerHTML = 'Switch';
+
+            //close timer
+            clearInterval(timer);
+
+            //add timer by clicking switch button
+            setTimerUpdate();
 
             break;
 
@@ -165,6 +176,11 @@ const switchFunction = subject => {
             switchButton11.innerHTML = 'Switch';
             switchButton12.innerHTML = 'Switch';
 
+            //close timer
+            clearInterval(timer);
+
+            //add timer by clicking switch button
+            setTimerUpdate();
 
             break;
 
@@ -202,6 +218,11 @@ const switchFunction = subject => {
             switchButton11.innerHTML = 'Switch';
             switchButton12.innerHTML = 'Switch';
 
+            //close timer
+            clearInterval(timer);
+
+            //add timer by clicking switch button
+            setTimerUpdate();
 
             break;
 
@@ -239,6 +260,12 @@ const switchFunction = subject => {
             switchButton10.innerHTML = 'Switch';
             switchButton11.innerHTML = 'Switch';
 
+            //close timer
+            clearInterval(timer);
+
+            //add timer by clicking switch button
+            setTimerUpdate();
+
             break;
 
         case 'optical-mineralogy':
@@ -274,6 +301,12 @@ const switchFunction = subject => {
             switchButton9.innerHTML = 'Switch';
             switchButton10.innerHTML = 'Switch';
             switchButton12.innerHTML = 'Switch';
+
+            //close timer
+            clearInterval(timer);
+
+            //add timer by clicking switch button
+            setTimerUpdate();
 
             break;
 
@@ -311,6 +344,12 @@ const switchFunction = subject => {
             switchButton11.innerHTML = 'Switch';
             switchButton12.innerHTML = 'Switch';
 
+            //close timer
+            clearInterval(timer);
+
+            //add timer by clicking switch button
+            setTimerUpdate();
+
             break;
 
         case 'hydrology(sg)':
@@ -347,6 +386,12 @@ const switchFunction = subject => {
             switchButton11.innerHTML = 'Switch';
             switchButton12.innerHTML = 'Switch';
 
+            //close timer
+            clearInterval(timer);
+
+            //add timer by clicking switch button
+            setTimerUpdate();
+
             break;
 
         case 'environmental-chemistry':
@@ -381,6 +426,12 @@ const switchFunction = subject => {
             switchButton10.innerHTML = 'Switch';
             switchButton11.innerHTML = 'Switch';
             switchButton12.innerHTML = 'Switch';
+
+            //close timer
+            clearInterval(timer);
+
+            //add timer by clicking switch button
+            setTimerUpdate();
 
             break;
 
@@ -418,6 +469,12 @@ const switchFunction = subject => {
             switchButton11.innerHTML = 'Switch';
             switchButton12.innerHTML = 'Switch';
 
+            //close timer
+            clearInterval(timer);
+
+            //add timer by clicking switch button
+            setTimerUpdate();
+
             break;
 
         case 'physics-3':
@@ -454,6 +511,12 @@ const switchFunction = subject => {
             switchButton11.innerHTML = 'Switch';
             switchButton12.innerHTML = 'Switch';
 
+            //close timer
+            clearInterval(timer);
+
+            //add timer by clicking switch button
+            setTimerUpdate();
+
             break;
 
         case 'programming':
@@ -489,6 +552,12 @@ const switchFunction = subject => {
             switchButton10.innerHTML = 'Switch';
             switchButton11.innerHTML = 'Switch';
             switchButton12.innerHTML = 'Switch';
+
+            //close timer
+            clearInterval(timer);
+
+            //add timer by clicking switch button
+            setTimerUpdate();
 
             break;
     }
@@ -622,8 +691,9 @@ const updateRandomNumber = () => {
 
         // it is use to covert -1 index to
         indexOfArr.innerHTML = final + 1;
+
         //close timer
-        clearInterval(timer)
+        clearInterval(timer);
     }
 }
 

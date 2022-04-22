@@ -15,6 +15,7 @@ const showWeek = document.getElementById('show_week');
 const showMonth = document.getElementById('show_month');
 const showYear = document.getElementById('show_year');
 const answerQuestion = document.getElementById('ans_question');
+const scrollId = document.getElementById('result_section');
 
 
 
@@ -47,9 +48,9 @@ let final;
 const switchFunction = subject => {
 
     // page scroll after a certain time [using invoke function for immediate call]
-    (function x() {
+    (function scrollPage() {
         setTimeout(function () {
-            showSubject.scrollIntoView(); // the main function that scroll the page to a certain element
+            scrollId.scrollIntoView({ behavior: 'smooth' }); // the main function that scroll the page to a certain element
         }, 600);
     })()
 

@@ -245,6 +245,7 @@ tr {
   }
   .show_subject h3 {
     font-size: 18px;
+    margin-bottom: 11px;
   }
   .clock_section {
     font-size: 13px;
@@ -256,5 +257,7 @@ tr {
   }
   #subject_heading {
     font-size: 23px;
+    margin: 0;
+    padding: 5px 0px;
   }
 }

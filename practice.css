@@ -204,6 +204,15 @@ tr {
 #show_subject {
   color: red;
 }
+#timer {
+  background-color: #ff0089;
+  padding: 7px 21px;
+  font-size: 18px;
+  color: white;
+  border-radius: 4px;
+  height: 46px;
+  display: inline-block;
+}
 
 /* media query for all device */
 

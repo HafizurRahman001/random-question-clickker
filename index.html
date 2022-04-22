@@ -256,19 +256,11 @@
                 </table>
             </div>
 
-            <button id="ask_question" onclick="updateRandomNumber()" class="btn btn-primary click_btn">Click
+            <button id="ask_question" onclick="updateRandomNumber()" class="btn btn-primary click_btn shadow-none">Click
                 Here</button>
 
             <!-- add timer -->
-            <span style='
-                background-color: #ff0089;
-                padding: 7px 21px;
-                font-size: 18px;
-                color: white;
-                border-radius: 4px;
-                height: 46px;
-                display: inline-block;
-            ' id="timer">Timer here..</span>
+            <span id="timer">Timer here..</span>
 
             <!-- modal declaring -->
             <!-- Button trigger modal -->
@@ -279,7 +271,7 @@
 
             <!-- Modal -->
             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
+                aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">

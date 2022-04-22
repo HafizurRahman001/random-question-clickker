@@ -40,7 +40,6 @@ const switchButton12 = document.getElementById('switch12');
 
 
 
-
 //set as global variable for use to another function
 let numberStrings;  // array element is set globally in this variable by condition
 let final;

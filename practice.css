@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Asap:ital@1&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap");
 
 .hero {
   background-image: url("./Images/hero7.png");
@@ -55,15 +56,18 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgb(255 32 118);
+  background-color: rgb(66 61 63);
   margin: 7px 0px;
   color: rgb(255 255 255);
-  text-shadow: 3px 2px 3px black;
+  text-shadow: 2px -1px 2px black;
   padding: 5px 0px;
+  font-family: "Yeseva One", cursive;
 }
 
 #subject_heading {
   text-transform: uppercase;
+  margin: 0;
+  padding: 6px 0;
 }
 
 .our_services_section {
@@ -213,6 +217,19 @@ tr {
   height: 46px;
   display: inline-block;
 }
+#all_question {
+  color: #0045ff;
+  font-weight: 500;
+  border: 1px solid black;
+  padding: 1px 6px;
+  border-radius: 57%;
+  display: inline-block;
+}
+
+/* customize bootstrap css style */
+.modal-header {
+  background: #ffeb00c7;
+}
 
 /* media query for all device */
 
@@ -249,6 +266,7 @@ tr {
   }
   .clock_section {
     font-size: 13px;
+    text-align: right;
   }
   .clock_section p {
     font-size: 10px;
@@ -256,8 +274,11 @@ tr {
     color: white;
   }
   #subject_heading {
-    font-size: 23px;
+    font-size: 19px;
     margin: 0;
     padding: 5px 0px;
+  }
+  .modal-body {
+    font-size: 22px !important;
   }
 }

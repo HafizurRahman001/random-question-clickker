@@ -681,10 +681,15 @@ const updateRandomNumber = () => {
         askQuestionBtn.disabled = true;
 
         // open the modal by auto clicking
-        finish.click()
+        finish.click();
 
-        //show array length to modal
-        allQuestion.innerHTML = numberStrings.length;
+        // condition for add 0 before the number if it is less than 10;
+        if (numberStrings.length < 10) {
+            allQuestion.innerHTML = numberStrings.length = '0' + numberStrings.length;
+        } else {
+            allQuestion.innerHTML = numberStrings.length;
+        }
+
 
         // show timer to modals
         timerShowModal.innerHTML = displayTime;
@@ -815,23 +820,23 @@ let crystallographyArray = ['Crystallography', 'Crystal', 'general characteristi
 
 let mathematicsArray = ['hafiz', 'mamun', 'ajad'];
 
-let opticalMineralogyArray = [];
+let opticalMineralogyArray = ['test purpose'];
 
-let hydrologyArrayByIlliasMahmud = [];
+let hydrologyArrayByIlliasMahmud = ['test purpose'];
 
-let hydrologyArrayBySukhen = [];
+let hydrologyArrayBySukhen = ['test purpose'];
 
 let dspArray = ['what is Siliciclastic Sedimentary Rocks 01', 'Sandstone (in details) 01', 'Framework Grain (in details) 01', 'Quartz(in details) 02', 'Feldspars(in details) 03', 'how many groups are feldspars devided into? and what are they? 03', 'Alkali Feldspar(in details) 03', 'what are the common members of Alkali Feldspar 03', 'Plagioclase feldspar (in details) 03', 'Accessory Framework Mineral 04', 'give examples of some Accessory Framework Minerals 04', 'what is havey mineral? 05', 'kinds/types of heavy mineral? 05', 'what is Rock Fragments? 05', 'what is Mineral Cements? 06', 'types / kinds of cementing minerals ? 06', 'Matrix Mineral(in details) 06', 'give the examples of most common clay minerals groups ? 06', 'examples of matrix minerals ? 06', 'describes Chemical composition of sandstone 07', 'Classification of Sandstone(must be read from 1st year slide with pictures) 07', 'describes Mineralogical Composition of Sandstone(must imagine the picture) 08', 'types / classification of sandstone ? (if the sandstone is free from matrix(< 5 %)) 08', 'Sandstone Maturity(in details) 09', 'types of sandstone maturity ? 09', 'on the basis of framework mineralogy how many major groups the sandstones are devided into ? 11', 'quartz arenites(in details) 11', 'feldspathic arenites(in details) 11', 'lithic arenites(in details) 12', 'Conglomerates(in details) 12', 'on the basis of grain shape how many types the conglomerates are devided into ? 12', 'describes the composition of conglomerates 12', 'classification of conglomerates(imagine the classified image) 13', 'describes Classification of Conglomerate 15', 'On the basis of clasts and matrix classified the epiclastic conglomerates 15', 'types of epiclastic conglomerates ? 15', 'fundamental genetic types of conglomerates and breccias ? 15', 'on the basis of clast stability classified Conglomerates and diamictites 17', 'Classification of conglomerates and diamictites on the basis class stability and fabric support 17', 'Origin and Occurrence of Conglomerate(in details) 19', 'difference between conglomerates and breccia ? 19', 'Shales(in details) 19', 'classification the mudrocks on the presence of lamination ? 21', 'describes Composition of Shales(mineralogical and chemical) 21', 'Mineralogical Composition of shales 21', 'Chemical Compositionof shales 21', 'Named the Major chemical constituents of shale ? 21', 'On the basis of grain size and lamination classified the shales ? 23', 'on the basis of fissile and non - fissile rock classified the shales ? 23', 'classification of shales and siltstone(> 50 % grains < 0.062 mm) 25', 'Origin and Occurrence of Shales 25', 'describes Diagenesis of Siliciclastic Sedimentary Rock 27', 'describes Stages and Realms of Diagenesis 27', 'what is diagenesis ? 27', 'When does diagenesis occur ? 27', 'process of lithification 27', 'describes Stages of Diagenesis 29', 'describe Major Diagenetic Processes and Effects 29', 'describe Eodiagenesis(Shallow burial) 29', 'describe Mesodiagenesis(Deep burial) 29', 'describe Telodiagenesis 31', 'imagine the sandstone overview 31', 'describe Point Counting Method 33', 'describe Textural Classification of Sandstone(with suitable diagram) 35', 'describe Evaporites(in details) 37', 'types of evaporate minerals on the basis of origin 38', 'types of evaporate minerals on the basis of chemical composition(imagine diagram if possible) 38', 'Difference between marine evaporates and non - marine evaporates 38', 'kinds of evaporites / evaporite deposits ? 39', 'describe gypsum(in details) 39', 'describe anhydrate(in details) 39', 'how many groups the anhydrate devide into ? 39', 'describe Nodular Anhydrite(in details) 39', 'what is chickenwire structure ? 39', 'describe Laminated Anhydrite(in details) 40', 'describe massive anhydrite 40', 'describe Halite(in details) 40', 'describe Origin of Evaporite Deposits 41', 'describe Evaporation Sequence 41', 'describe Depositional model for evaporites(in details) 41', 'how many models are considered for evaporate deposition ? 41', 'describe "Deep-Water, Deep-Basin Model"(with suitable figure) 41', 'describe "Shallow-Water, Shallow-Basin Model"(with suitable figure) 42', 'describe "Shallow-Water, Deep-Basin Model"(with suitable figure) 43', 'Explain Diagenesis of Evaporites 43', 'describe Iron Formation(in details) 44', 'chemical composition of sliciclastic sedimentary rock(in details) 07', 'describe Ironstones(in details) 45', 'describe Iron - Rich Shales(in details) 45', 'describe Miscellaneous Iron - Rich Sediments(in details) 45'];
 
-let pspArray = [];
+let pspArray = ['test purpose'];
 
-let chemistryArray = [];
+let chemistryArray = ['test purpose'];
 
-let physics_2_Array = [];
+let physics_2_Array = ['test purpose'];
 
-let physics_3_Array = [];
+let physics_3_Array = ['test purpose'];
 
-let programmingArray = [];
+let programmingArray = ['test purpose'];
 
-let stratigraphyArray = [];
+let stratigraphyArray = ['test purpose'];
 

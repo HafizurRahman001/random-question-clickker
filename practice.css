@@ -158,6 +158,7 @@ tr {
   background-color: rgb(25, 7, 218) !important;
   padding: 9px 15px;
   font-size: 18px;
+  font-weight: 600;
 }
 
 /* .switch_button:hover {
@@ -216,6 +217,8 @@ tr {
   border-radius: 4px;
   height: 46px;
   display: inline-block;
+  cursor: default;
+  font-weight: 600;
 }
 #all_question {
   color: #0045ff;

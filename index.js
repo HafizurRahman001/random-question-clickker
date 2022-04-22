@@ -736,7 +736,7 @@ const switchFunction = subject => {
         for (i of physics_3_Array) {
             let indexNumberOfPhysics3Array = physics_3_Array.indexOf(i);
             arr = [];
-            arr = [indexNumberOfPhysics3Array]
+            arr = [indexNumberOfPhysics3Array];
         };
 
         subjectHeading.innerHTML = subject;

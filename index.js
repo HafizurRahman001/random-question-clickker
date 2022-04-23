@@ -951,10 +951,11 @@ const sendmail = () => {
     const userEmail = document.getElementById('user_email').value;
     const sendAllQuestionsToMail = allQuestion.innerHTML;
     const sendTimeToMail = timerShowModal.innerHTML;
+    const randomQuestionClickerWebsite = "https://random-question-clicker.netlify.app/";
 
 
     //set a waiting message in the modal until the response of Email.send() function is OK
-    document.getElementById('modal_body_section').innerHTML = 'Please Waiting A Moment....\n' + 'Your information is on Processing...'
+    document.getElementById('modal_body_section').innerHTML = `<Your style='color:red'>Please Waiting A Moment....<br/> Your information is on Processing...`
     document.getElementById('exampleModalLabel').innerHTML = 'KEEP PATIENT';
 
     if (userEmail.length > 3) {
@@ -966,12 +967,12 @@ const sendmail = () => {
             To: userEmail,
             From: "hafizurrahmanbu@gmail.com",
             Subject: `Congradulations!! You have successFully passed ${numberStrings.length} questions.`,
-            Body: "You Finished: " + `<b> ${sendAllQuestionsToMail} </b>` + " Questions <br/>" +
-                "You Get Time: " + `<b> ${sendTimeToMail} </b>` + ' Hour(s) <br/><br/>' +
-                "All questions is given below:" +
+            Body: `<p style='font-size:16px'>Dear ${userEmail} thank you very much for try the <a href=${randomQuestionClickerWebsite}>random question clicker</a> website. Your performance is given below:</p> <h3>You Finished: <span style='color:red'><b> ${sendAllQuestionsToMail} </b></span>  Questions <br/>
+                You Get Time: <span style='background-color:yellow;padding:2px'><b> ${sendTimeToMail} </b></span> Hour(s)</h3>` +
+                `<span style='color:crimson;font-size:18px'>All questions is given below:</span>` +
                 numberStrings.map((question, index) => {
                     return '<br/> <b> Question-</b>' + `<b>${(index + 1)}:</b>` + ' ' + `<i> ${question.slice(0, -2)} </i>`
-                })
+                }) + `<p style='font-size:16px;color:#1900ff'>Thanks for your patient. Is this website is really helpful? Are you think it is the nice one for your study purpose? If yeah, then don't forget to give your reply with review.</p>`
 
         }).then(message => {
             if (message === 'OK') {
@@ -980,8 +981,6 @@ const sendmail = () => {
             // alert(message)
         }
         );
-    } else {
-        window.location.reload()
     }
 
 

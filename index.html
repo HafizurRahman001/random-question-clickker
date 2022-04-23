@@ -33,7 +33,7 @@
             </div>
             <div class="clock_section">
                 <div class="clock">
-                    <div id="show_time"></div>
+                    <div><span id="show_time"></span><sup><span id="show_session"></span></sup></div>
                 </div>
                 <p> <span id="show_week"></span>, <span id="show_date"></span> <span id="show_month"></span>, <span
                         id="show_year"></span></p>
@@ -281,13 +281,12 @@
                         </div>
                         <div style='font-size: 25px' class="modal-body">
                             <span style='font-weight:600'> Congratularions!!</span></span> <br />You have finished <span
-                                id='all_question'></span>
+                                class='all_question' id='all_question'></span>
                             questions by
-                            <span style='color:red;font-weight: 500' id="timer_show_modal"></span> Hour(s)
+                            <span id="timer_show_modal"></span> Hour(s)
                         </div>
                         <div class="modal-footer">
-                            <button onclick='closeButton()' type="button" class="btn btn-secondary"
-                                data-bs-dismiss="modal">Close</button>
+                            <buttons type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</buttons>
                         </div>
                     </div>
                 </div>
@@ -304,12 +303,12 @@
         <div class="container">
             <div class="footer">
                 <div class="row">
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-6 py-2">
                         <div class="footer_img">
                             <img class='question_img' src="./Images/footerImage.png" alt="">
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-6 py-2">
                         <div class="footer_middle_text">
                             <h3>Heading...</h3>
                             <ul>
@@ -321,7 +320,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-6 py-2">
                         <div class="footer_end_text">
                             <h3>Contact Me</h3>
                             <p>Lorem, ipsum dolor.</p>
@@ -329,7 +328,7 @@
                             <p>Lorem, ipsum dolor.</p>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-6 py-2">
                         <div class="footer_end_text">
                             <h3>Contact Me</h3>
                             <p>Lorem, ipsum dolor.</p>
@@ -338,6 +337,11 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+        <div class="copy_right">
+            <div class="copy_right_text">
+                <p>@ 2022, All right reserved to Sumaiya Esmita</p>
             </div>
         </div>
     </div>

@@ -4,10 +4,10 @@ const askQuestionBtn = document.getElementById('ask_question');
 const finish = document.getElementById('finish');
 const footer = document.getElementById('footer');
 const allQuestion = document.getElementById('all_question');
-const subjectHeading = document.getElementById('subject_heading');
 const showSubject = document.getElementById('show_subject');
 const showSubjectSection = document.getElementById('show_subject_section');
 const showTime = document.getElementById('show_time');
+const showSession = document.getElementById('show_session');
 const setTimer = document.getElementById('timer');
 const timerShowModal = document.getElementById('timer_show_modal');
 const showDate = document.getElementById('show_date');
@@ -47,21 +47,17 @@ let final;
 
 const switchFunction = subject => {
 
-
-
     // page scroll after a certain time [using invoke function for immediate call]
     (function scrollPage() {
         setTimeout(function () {
             scrollId.scrollIntoView({ behavior: 'smooth' }); // the main function that scroll the page to a certain element
         }, 600);
-    })()
-
+    })();
 
 
     //condition for switch button styling
     switch (subject) {
         case 'crystallography':
-            //add style to selected id
             switchButton1.classList.add('switch_btn_style');
 
 
@@ -99,11 +95,8 @@ const switchFunction = subject => {
             answerQuestion.innerHTML = '00';
             showData.innerHTML = 'Here You Can Show Random Question....';
 
-            //close the previous timer when click a new jubject
-            clearInterval(timer);
-
-            //set new timer when click a new subject
-            setTimerUpdate();
+            clearInterval(timer);    //close the previous timer when click a new subject
+            setTimerUpdate();    //set new timer when click a new subject
 
             break;
 
@@ -144,11 +137,8 @@ const switchFunction = subject => {
             answerQuestion.innerHTML = '00';
             showData.innerHTML = 'Here You Can Show Random Question....';
 
-            //close the previous timer when click a new jubject
-            clearInterval(timer);
-
-            //set new timer when click a new subject
-            setTimerUpdate();
+            clearInterval(timer);    //close the previous timer when click a new subject
+            setTimerUpdate();    //set new timer when click a new subject
 
             break;
 
@@ -189,11 +179,8 @@ const switchFunction = subject => {
             answerQuestion.innerHTML = '00';
             showData.innerHTML = 'Here You Can Show Random Question....';
 
-            //close the previous timer when click a new jubject
-            clearInterval(timer);
-
-            //set new timer when click a new subject
-            setTimerUpdate();
+            clearInterval(timer);    //close the previous timer when click a new subject
+            setTimerUpdate();    //set new timer when click a new subject
 
             break;
 
@@ -234,11 +221,8 @@ const switchFunction = subject => {
             answerQuestion.innerHTML = '00';
             showData.innerHTML = 'Here You Can Show Random Question....';
 
-            //close the previous timer when click a new jubject
-            clearInterval(timer);
-
-            //set new timer when click a new subject
-            setTimerUpdate();
+            clearInterval(timer);    //close the previous timer when click a new subject
+            setTimerUpdate();    //set new timer when click a new subject
 
             break;
 
@@ -279,11 +263,9 @@ const switchFunction = subject => {
             answerQuestion.innerHTML = '00';
             showData.innerHTML = 'Here You Can Show Random Question....';
 
-            //close the previous timer when click a new jubject
-            clearInterval(timer);
+            clearInterval(timer);    //close the previous timer when click a new subject
 
-            //set new timer when click a new subject
-            setTimerUpdate();
+            setTimerUpdate();    //set new timer when click a new subject
 
             break;
 
@@ -324,11 +306,8 @@ const switchFunction = subject => {
             answerQuestion.innerHTML = '00';
             showData.innerHTML = 'Here You Can Show Random Question....';
 
-            //close the previous timer when click a new jubject
-            clearInterval(timer);
-
-            //set new timer when click a new subject
-            setTimerUpdate();
+            clearInterval(timer);    //close the previous timer when click a new subject
+            setTimerUpdate();    //set new timer when click a new subject
 
             break;
 
@@ -369,11 +348,8 @@ const switchFunction = subject => {
             answerQuestion.innerHTML = '00';
             showData.innerHTML = 'Here You Can Show Random Question....';
 
-            //close the previous timer when click a new jubject
-            clearInterval(timer);
-
-            //set new timer when click a new subject
-            setTimerUpdate();
+            clearInterval(timer);    //close the previous timer when click a new subject
+            setTimerUpdate();    //set new timer when click a new subject
 
             break;
 
@@ -414,11 +390,8 @@ const switchFunction = subject => {
             answerQuestion.innerHTML = '00';
             showData.innerHTML = 'Here You Can Show Random Question....';
 
-            //close the previous timer when click a new jubject
-            clearInterval(timer);
-
-            //set new timer when click a new subject
-            setTimerUpdate();
+            clearInterval(timer);    //close the previous timer when click a new subject
+            setTimerUpdate();     //set new timer when click a new subject
 
             break;
 
@@ -459,11 +432,8 @@ const switchFunction = subject => {
             answerQuestion.innerHTML = '00';
             showData.innerHTML = 'Here You Can Show Random Question....';
 
-            //close the previous timer when click a new jubject
-            clearInterval(timer);
-
-            //set new timer when click a new subject
-            setTimerUpdate();
+            clearInterval(timer);   //close the previous timer when click a new subject
+            setTimerUpdate();   //set new timer when click a new subject
 
             break;
 
@@ -487,7 +457,7 @@ const switchFunction = subject => {
             // switch button inner html change after selecting
             switchButton4.innerHTML = 'Selected'
 
-            //other will be stay switch
+            //other button will be stay switch
             switchButton1.innerHTML = 'Switch';
             switchButton2.innerHTML = 'Switch';
             switchButton3.innerHTML = 'Switch';
@@ -504,11 +474,8 @@ const switchFunction = subject => {
             answerQuestion.innerHTML = '00';
             showData.innerHTML = 'Here You Can Show Random Question....';
 
-            //close the previous timer when click a new jubject
-            clearInterval(timer);
-
-            //set new timer when click a new subject
-            setTimerUpdate();
+            clearInterval(timer);    //close the previous timer when click a new subject
+            setTimerUpdate();    //set new timer when click a new subject
 
             break;
 
@@ -532,7 +499,7 @@ const switchFunction = subject => {
             // switch button inner html change after selecting
             switchButton5.innerHTML = 'Selected'
 
-            //other will be stay switch
+            //other button will be stay switch
             switchButton1.innerHTML = 'Switch';
             switchButton2.innerHTML = 'Switch';
             switchButton3.innerHTML = 'Switch';
@@ -549,15 +516,13 @@ const switchFunction = subject => {
             answerQuestion.innerHTML = '00';
             showData.innerHTML = 'Here You Can Show Random Question....';
 
-            //close the previous timer when click a new jubject
-            clearInterval(timer);
-
-            //set new timer when click a new subject
-            setTimerUpdate();
+            clearInterval(timer);    //close the previous timer when click a new subject
+            setTimerUpdate();    //set new timer when click a new subject
 
             break;
 
         case 'programming':
+
             switchButton3.classList.add('switch_btn_style');
 
             //remove style from others id
@@ -577,7 +542,7 @@ const switchFunction = subject => {
             // switch button inner html change after selecting
             switchButton3.innerHTML = 'Selected'
 
-            //other will be stay switch
+            //other button will be stay switch
             switchButton1.innerHTML = 'Switch';
             switchButton2.innerHTML = 'Switch';
             switchButton4.innerHTML = 'Switch';
@@ -594,11 +559,8 @@ const switchFunction = subject => {
             answerQuestion.innerHTML = '00';
             showData.innerHTML = 'Here You Can Show Random Question....';
 
-            //close the previous timer when click a new jubject
-            clearInterval(timer);
-
-            //set new timer when click a new subject
-            setTimerUpdate();
+            clearInterval(timer);    //close the previous timer when click a new subject
+            setTimerUpdate();    //set new timer when click a new subject
 
             break;
     }
@@ -607,96 +569,93 @@ const switchFunction = subject => {
 
     //conditions for set array
     if (subject === 'mathematics') {
-        // set the predefined curElement to 0 as if the previous curElement value is alternate with 0
-        curElement = 0;
-
-        //set the declaring array to the predefined numberStrings array
-        numberStrings = mathematicsArray;
+        curElement = 0;    // set the predefined curElement to 0 as if the previous curElement value is alternate with 0
+        numberStrings = mathematicsArray;    //set the declaring array to the predefined numberStrings array
 
         // get the index from the mathematicsArray and set it to the 'arr' array
         for (i of mathematicsArray) {
             let indexNumberOfMathematicsArray = mathematicsArray.indexOf(i);
             arr = [];
-            arr = [indexNumberOfMathematicsArray]
+            arr = [indexNumberOfMathematicsArray];
         };
 
-        subjectHeading.innerHTML = subject;
+        //show subject name to the browser
         showSubject.innerHTML = subject;
 
-    } else if (subject === 'optical-mineralogy') {
-        // set the predefined curElement to 0 as if the previous curElement value is alternate with 0
-        curElement = 0;
+        //remove the disabled buttons
+        askQuestionBtn.disabled = false;
 
-        //set the declaring array to the predefined numberStrings array
-        numberStrings = opticalMineralogyArray;
+    } else if (subject === 'optical-mineralogy') {
+        curElement = 0;     // set the predefined curElement to 0 as if the previous curElement value is alternate with 0
+        numberStrings = opticalMineralogyArray;    //set the declaring array to the predefined numberStrings array
 
         // get the index from the opticalMineralogyArray and set it to the 'arr' array
         for (i of opticalMineralogyArray) {
             let indexNumberOfOpticalMineralogyArray = opticalMineralogyArray.indexOf(i);
             arr = [];
-            arr = [indexNumberOfOpticalMineralogyArray]
+            arr = [indexNumberOfOpticalMineralogyArray];
         };
 
-        subjectHeading.innerHTML = subject;
+        //show subject name to the browser
         showSubject.innerHTML = subject;
 
-    } else if (subject === 'hydrology(IM)') {
-        // set the predefined curElement to 0 as if the previous curElement value is alternate with 0
-        curElement = 0;
+        //remove the disabled buttons
+        askQuestionBtn.disabled = false;
 
-        //set the declaring array to the predefined numberStrings array
-        numberStrings = hydrologyArrayByIlliasMahmud;
+    } else if (subject === 'hydrology(IM)') {
+        curElement = 0;    // set the predefined curElement to 0 as if the previous curElement value is alternate with 0
+        numberStrings = hydrologyArrayByIlliasMahmud;    //set the declaring array to the predefined numberStrings array
 
         // get the index from the hydrologyArrayByIlliasMahmud and set it to the 'arr' array
         for (i of hydrologyArrayByIlliasMahmud) {
             let indexNumberOfHydrologyIlliasArray = hydrologyArrayByIlliasMahmud.indexOf(i);
             arr = [];
-            arr = [indexNumberOfHydrologyIlliasArray]
+            arr = [indexNumberOfHydrologyIlliasArray];
         };
 
-        subjectHeading.innerHTML = subject;
+        //show subject name to the browser
         showSubject.innerHTML = subject;
 
-    } else if (subject === 'hydrology(sg)') {
-        // set the predefined curElement to 0 as if the previous curElement value is alternate with 0
-        curElement = 0;
+        //remove the disabled buttons
+        askQuestionBtn.disabled = false;
 
-        //set the declaring array to the predefined numberStrings array
-        numberStrings = hydrologyArrayBySukhen;
+    } else if (subject === 'hydrology(sg)') {
+        curElement = 0;    // set the predefined curElement to 0 as if the previous curElement value is alternate with 0
+        numberStrings = hydrologyArrayBySukhen;   //set the declaring array to the predefined numberStrings array
 
         // get the index from the hydrologyArrayBySukhen and set it to the 'arr' array
         for (i of hydrologyArrayBySukhen) {
             let indexNumberOfHydrologySukhenArray = hydrologyArrayBySukhen.indexOf(i);
             arr = [];
-            arr = [indexNumberOfHydrologySukhenArray]
+            arr = [indexNumberOfHydrologySukhenArray];
         };
 
-        subjectHeading.innerHTML = subject;
+        //show subject name to the browser
         showSubject.innerHTML = subject;
 
-    } else if (subject === 'p.s.p') {
-        // set the predefined curElement to 0 as if the previous curElement value is alternate with 0
-        curElement = 0;
+        //remove the disabled buttons
+        askQuestionBtn.disabled = false;
 
-        //set the declaring array to the predefined numberStrings array
-        numberStrings = pspArray;
+    } else if (subject === 'p.s.p') {
+        curElement = 0;    // set the predefined curElement to 0 as if the previous curElement value is alternate with 0
+        numberStrings = pspArray;    //set the declaring array to the predefined numberStrings array
 
         // get the index from the pspArray and set it to the 'arr' array
         for (i of pspArray) {
             let indexNumberOfPspArray = pspArray.indexOf(i);
             arr = [];
-            arr = [indexNumberOfPspArray]
+            arr = [indexNumberOfPspArray];
         };
 
-        subjectHeading.innerHTML = subject;
+        //show subject name to the browser
         showSubject.innerHTML = subject;
 
-    } else if (subject === 'd.s.p') {
-        // set the predefined curElement to 0 as if the previous curElement value is alternate with 0
-        curElement = 0;
+        //remove the disabled buttons
+        askQuestionBtn.disabled = false;
 
-        //set the declaring array to the predefined numberStrings array
-        numberStrings = dspArray;
+    } else if (subject === 'd.s.p') {
+        curElement = 0;    // set the predefined curElement to 0 as if the previous curElement value is alternate with 0
+        numberStrings = dspArray;    //set the declaring array to the predefined numberStrings array
 
         // get the index from the dspArray and set it to the 'arr' array
         for (i of dspArray) {
@@ -705,32 +664,32 @@ const switchFunction = subject => {
             arr = [indexNumberOfDspArray];
         };
 
-        subjectHeading.innerHTML = subject;
+        //show subject name to the browser
         showSubject.innerHTML = subject;
 
-    } else if (subject === 'environmental-chemistry') {
-        // set the predefined curElement to 0 as if the previous curElement value is alternate with 0
-        curElement = 0;
+        //remove the disabled buttons
+        askQuestionBtn.disabled = false;
 
-        //set the declaring array to the predefined numberStrings array
-        numberStrings = chemistryArray;
+    } else if (subject === 'environmental-chemistry') {
+        curElement = 0;    // set the predefined curElement to 0 as if the previous curElement value is alternate with 0
+        numberStrings = chemistryArray;    //set the declaring array to the predefined numberStrings array
 
         // get the index from the chemistryArray and set it to the 'arr' array
         for (i of chemistryArray) {
             let indexNumberOfChemistryArray = chemistryArray.indexOf(i);
             arr = [];
-            arr = [indexNumberOfChemistryArray]
+            arr = [indexNumberOfChemistryArray];
         };
 
-        subjectHeading.innerHTML = subject;
+        //show subject name to the browser
         showSubject.innerHTML = subject;
 
-    } else if (subject === 'physics-3') {
-        // set the predefined curElement to 0 as if the previous curElement value is alternate with 0
-        curElement = 0;
+        //remove the disabled buttons
+        askQuestionBtn.disabled = false;
 
-        //set the declaring array to the predefined numberStrings array
-        numberStrings = physics_3_Array;
+    } else if (subject === 'physics-3') {
+        curElement = 0;    // set the predefined curElement to 0 as if the previous curElement value is alternate with 0
+        numberStrings = physics_3_Array;    //set the declaring array to the predefined numberStrings array
 
         // get the index from the physics_3_Array and set it to the 'arr' array
         for (i of physics_3_Array) {
@@ -739,103 +698,89 @@ const switchFunction = subject => {
             arr = [indexNumberOfPhysics3Array];
         };
 
-        subjectHeading.innerHTML = subject;
+        //show subject name to the browser
         showSubject.innerHTML = subject;
 
-    } else if (subject === 'physics-2') {
-        // set the predefined curElement to 0 as if the previous curElement value is alternate with 0
-        curElement = 0;
+        //remove the disabled buttons
+        askQuestionBtn.disabled = false;
 
-        //set the declaring array to the predefined numberStrings array
-        numberStrings = physics_2_Array;
+    } else if (subject === 'physics-2') {
+        curElement = 0;    // set the predefined curElement to 0 as if the previous curElement value is alternate with 0
+        numberStrings = physics_2_Array;   //set the declaring array to the predefined numberStrings array
 
         // get the index from the physics_2_Array and set it to the 'arr' array
         for (i of physics_2_Array) {
             let indexNumberOfPhysics2Array = physics_2_Array.indexOf(i);
             arr = [];
-            arr = [indexNumberOfPhysics2Array]
+            arr = [indexNumberOfPhysics2Array];
         };
 
-        subjectHeading.innerHTML = subject;
+        //show subject name to the browser
         showSubject.innerHTML = subject;
 
-    } else if (subject === 'programming') {
-        // set the predefined curElement to 0 as if the previous curElement value is alternate with 0
-        curElement = 0;
+        //remove the disabled buttons
+        askQuestionBtn.disabled = false;
 
-        //set the declaring array to the predefined numberStrings array
-        numberStrings = programmingArray;
+    } else if (subject === 'programming') {
+        curElement = 0;     // set the predefined curElement to 0 as if the previous curElement value is alternate with 0
+        numberStrings = programmingArray;    //set the declaring array to the predefined numberStrings array
 
         // get the index from the programmingArray and set it to the 'arr' array
         for (i of programmingArray) {
             let indexNumberOfProgrammingArray = programmingArray.indexOf(i);
             arr = [];
-            arr = [indexNumberOfProgrammingArray]
+            arr = [indexNumberOfProgrammingArray];
         };
 
-        subjectHeading.innerHTML = subject;
+        //show subject name to the browser
         showSubject.innerHTML = subject;
 
-    } else if (subject === 'stratigraphy') {
-        // set the predefined curElement to 0 as if the previous curElement value is alternate with 0
-        curElement = 0;
+        //remove the disabled buttons
+        askQuestionBtn.disabled = false;
 
-        //set the declaring array to the predefined numberStrings array
-        numberStrings = stratigraphyArray;
+    } else if (subject === 'stratigraphy') {
+        curElement = 0;     // set the predefined curElement to 0 as if the previous curElement value is alternate with 0      
+        numberStrings = stratigraphyArray;    //set the declaring array to the predefined numberStrings array
 
         // get the index from the stratigraphyArray and set it to the 'arr' array
         for (i of stratigraphyArray) {
             let indexNumberOfStratigraphyArray = stratigraphyArray.indexOf(i);
             arr = [];
-            arr = [indexNumberOfStratigraphyArray]
+            arr = [indexNumberOfStratigraphyArray];
         };
 
-        subjectHeading.innerHTML = subject;
+        //show subject name to the browser
         showSubject.innerHTML = subject;
 
-    } else if (subject === 'crystallography') {
-        // set the predefined curElement to 0 as if the previous curElement value is alternate with 0
-        curElement = 0;
+        //remove the disabled buttons
+        askQuestionBtn.disabled = false;
 
-        //set the declaring array to the predefined numberStrings array
-        numberStrings = crystallographyArray;
+    } else if (subject === 'crystallography') {
+        curElement = 0;    // set the predefined curElement to 0 as if the previous curElement value is alternate with 0
+        numberStrings = crystallographyArray;     //set the declaring array to the predefined numberStrings array
 
         // get the index from the crystallographyArray and set it to the 'arr' array
         for (i of crystallographyArray) {
             let indexNumberOfCrystallographyArray = crystallographyArray.indexOf(i);
             arr = [];
-            arr = [indexNumberOfCrystallographyArray]
+            arr = [indexNumberOfCrystallographyArray];
         };
 
-        subjectHeading.innerHTML = subject;
+        //show subject name to the browser
         showSubject.innerHTML = subject;
+
+        //remove the disabled buttons
+        askQuestionBtn.disabled = false;
 
     } else {
         numberStrings = [];
-    }
-
-
-
-    // you can use switch case instead of if else condition
-    /* switch (subject) {
-         case 'mathematics':
-             numberStrings = ['alu', 'kochu']
-             break;
-         case 'p.s.p':
-             numberStrings = ['psp', 'psp']
-             break;
-     
-         default:
-             numberStrings = ['sadik']
-             break;
-     } */
-
+    };
 
     // show array length as a index number in the browser
     indexOfArr.innerHTML = numberStrings.length;
     final = numberStrings.length;
 
-}
+};
 
 
 
@@ -846,69 +791,51 @@ let arr = [];
 
 // main function for showing unique and random value on browser
 const updateRandomNumber = () => {
-    indexOfArr.innerHTML = numberStrings.length - 1;
-
     // store unique value in empty array
     while (arr.length < numberStrings.length) {
         let r = Math.floor(Math.random() * (numberStrings.length));
         if (arr.indexOf(r) === -1) {
             arr.push(r)
         };
-    }
+    };
 
     if (curElement == numberStrings.length) {
         curElement = 0
     };
 
     // pick up the element from 'arr' array and increasing curElement by clicking
-    console.log('curElement 1:', curElement)
-
     let newElement = arr[curElement++];
-
     let subjectName = (numberStrings[newElement]);
 
 
-    console.log('numberStrings:', numberStrings);
-    console.log('arr:', arr)
-    console.log('newElement:', newElement)
-    console.log('curElement 2:', curElement)
+    // console.log('numberStrings:', numberStrings);
+    // console.log('arr:', arr)
+    // console.log('newElement:', newElement)
+    // console.log('curElement 2:', curElement)
     // console.log('subj', subjectName)
-
 
 
     // shows the result one by one in browser
     showData.innerHTML = subjectName.slice(0, -2);
     answerQuestion.innerHTML = subjectName.slice(-2);
-
-    // count down index number one by one
-    final--;
-    indexOfArr.innerHTML = final;
+    final--;      // decreasing index number one by one
+    indexOfArr.innerHTML = final;      // show the decreasing index to the browser
 
     // condition for open modal
     if (final < 0) {
-
-        // disable the askquestion button
-        askQuestionBtn.disabled = true;
-
-        // open the modal by auto clicking
-        finish.click();
+        askQuestionBtn.disabled = true;    // disable the ask question button
+        finish.click();     // open the modal by auto clicking
 
         // condition for add 0 before the number if it is less than 10;
         if (numberStrings.length < 10) {
             allQuestion.innerHTML = numberStrings.length = '0' + numberStrings.length;
-        } else {
+        } else if (numberStrings.length > 99) {
             allQuestion.innerHTML = numberStrings.length;
-        }
+        };
 
-
-        // show timer to modals
-        timerShowModal.innerHTML = displayTime;
-
-        // it is use to covert -1 index to
-        indexOfArr.innerHTML = final + 1;
-
-        //close timer
-        clearInterval(timer);
+        timerShowModal.innerHTML = displayTime;     // show timer to modals
+        indexOfArr.innerHTML = final + 1;      // it is use to covert -1 index to
+        clearInterval(timer);    //close timer
     }
 }
 
@@ -938,8 +865,9 @@ const timeSet = () => {
     s = (s < 10) ? "0" + s : s;
 
     //show the time to browser
-    const time = h + ":" + m + ":" + s + " " + session;
+    const time = h + ":" + m + ":" + s;
     showTime.innerHTML = time;
+    showSession.innerHTML = session;
 
 
     //get date
@@ -970,6 +898,7 @@ const timeSet = () => {
     } else if (monthDigit === 11) {
         monthName = 'Dec'
     }
+
     showWeek.innerHTML = date.toString().slice(0, 3);
     showDate.innerHTML = date.getDate();
     showMonth.innerHTML = monthName;
@@ -977,11 +906,6 @@ const timeSet = () => {
 }
 //call the timeSet function
 setInterval(timeSet, 1000);
-
-// close modal and refresh page
-const closeButton = () => {
-    window.location.reload();
-}
 
 
 // add timer to browser
@@ -1013,9 +937,8 @@ const setTimerUpdate = () => {
         // displayTime = hDisplay + mDisplay + sDisplay;
         displayTime = h + ":" + m + ":" + s;
 
-        //show timer to browser
-        setTimer.innerHTML = displayTime;
-        sec++; //increase timer one for every interval
+        setTimer.innerHTML = displayTime;    //show timer to browser
+        sec++;   //increase timer one for every interval
 
     }, 1000)
 }
@@ -1050,3 +973,7 @@ let programmingArray = ['test purpose', 'sucess'];
 
 let stratigraphyArray = ['test purpose', 'success'];
 
+
+const of = () => {
+    console.log('thik ac')
+}

@@ -23,6 +23,8 @@
 .clock {
   color: yellow;
   text-shadow: 1px 1px 7px #000000;
+  padding-bottom: 7px;
+  position: relative;
 }
 .clock_section p {
   font-size: 12px;
@@ -68,6 +70,7 @@
   text-transform: uppercase;
   margin: 0;
   padding: 6px 0;
+  font-family: "Yeseva One display", sans-serif;
 }
 
 .our_services_section {
@@ -190,7 +193,7 @@ tr {
   margin-top: 45px;
 }
 .footer {
-  padding: 20px 0px;
+  padding-top: 20px;
 }
 
 .show_subject {
@@ -221,19 +224,37 @@ tr {
   cursor: default;
   font-weight: 600;
 }
-#all_question {
+#show_session {
+  font-size: 14px;
+  color: #01fff3;
+}
+.all_question {
   color: #0045ff;
+  font-weight: 600;
+}
+#timer_show_modal {
+  color: red;
   font-weight: 500;
-  border: 1px solid black;
-  padding: 2px 5px;
-  border-radius: 57%;
-  display: inline-block;
-  /* text-decoration: underline; */
+  background: yellow;
+  padding: 0 5px;
 }
 
 /* customize bootstrap css style */
 .modal-header {
   background: #ffeb00c7;
+}
+.copy_right {
+  background: #172f31;
+}
+.copy_right_text {
+  min-height: 15px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+.copy_right_text p {
+  margin: 0;
+  padding: 7px 0;
 }
 
 /* media query for all device */
@@ -285,5 +306,8 @@ tr {
   }
   .modal-body {
     font-size: 22px !important;
+  }
+  #show_session {
+    font-size: 9px;
   }
 }

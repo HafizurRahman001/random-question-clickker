@@ -791,6 +791,7 @@ let arr = [];
 
 // main function for showing unique and random value on browser
 const updateRandomNumber = () => {
+    console.log('arr', numberStrings)
     // store unique value in empty array
     while (arr.length < numberStrings.length) {
         let r = Math.floor(Math.random() * (numberStrings.length));
@@ -945,6 +946,48 @@ const setTimerUpdate = () => {
 
 
 
+// send a free email to the user email account
+const sendmail = () => {
+    const userEmail = document.getElementById('user_email').value;
+    const sendAllQuestionsToMail = allQuestion.innerHTML;
+    const sendTimeToMail = timerShowModal.innerHTML;
+
+
+    //set a waiting message in the modal until the response of Email.send() function is OK
+    document.getElementById('modal_body_section').innerHTML = 'Please Waiting A Moment....\n' + 'Your information is on Processing...'
+    document.getElementById('exampleModalLabel').innerHTML = 'KEEP PATIENT';
+
+    if (userEmail.length > 3) {
+
+        Email.send({
+            Host: "smtp.gmail.com",
+            Username: "hafizurrahmanbu@gmail.com",
+            Password: "fcqrhyktzrasblxz",
+            To: userEmail,
+            From: "hafizurrahmanbu@gmail.com",
+            Subject: `Congradulations!! You have successFully passed ${numberStrings.length} questions.`,
+            Body: "You Finished: " + `<b> ${sendAllQuestionsToMail} </b>` + " Questions <br/>" +
+                "You Get Time: " + `<b> ${sendTimeToMail} </b>` + ' Hour(s) <br/><br/>' +
+                "All questions is given below:" +
+                numberStrings.map((question, index) => {
+                    return '<br/> <b> Question-</b>' + `<b>${(index + 1)}:</b>` + ' ' + `<i> ${question.slice(0, -2)} </i>`
+                })
+
+        }).then(message => {
+            if (message === 'OK') {
+                window.location.reload();   // i use the reload function as if the popup modal removed
+            }
+            // alert(message)
+        }
+        );
+    } else {
+        window.location.reload()
+    }
+
+
+}
+
+
 
 
 
@@ -973,7 +1016,3 @@ let programmingArray = ['test purpose', 'sucess'];
 
 let stratigraphyArray = ['test purpose', 'success'];
 
-
-const of = () => {
-    console.log('thik ac')
-}

@@ -276,17 +276,25 @@
                     <div class="modal-content">
                         <div class="modal-header">
                             <h5 class="modal-title" id="exampleModalLabel">CONGRATULATION MESSAGE</h5>
-                            <button onclick='closeButton()' type="button" class="btn-close" data-bs-dismiss="modal"
-                                aria-label="Close"></button>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
-                        <div style='font-size: 25px' class="modal-body">
+                        <div id='modal_body_section' style='font-size: 25px' class="modal-body">
                             <span style='font-weight:600'> Congratularions!!</span></span> <br />You have finished <span
                                 class='all_question' id='all_question'></span>
                             questions by
                             <span id="timer_show_modal"></span> Hour(s)
                         </div>
-                        <div class="modal-footer">
-                            <buttons type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</buttons>
+                        <div class="modal_footer_section">
+                            <form method='post' onsubmit='return false'>
+                                <p>Please drop your email for more information</p>
+                                <div class="user_email_input">
+                                    <input required id='user_email' type="text" name='email' class=""
+                                        placeholder="Drop Your Email...">
+                                    <input onclick="sendmail()" id='submit_btn' type="submit" class="btn send__btn"
+                                        value="Submit">
+                                    <!--I removed data-bs-dismiss="modal" form the submit button because if i keep it, then without any user email the popup box is closed. but i want until the user does not provide email the modal does not close. so i remove the data-bs-dismiss="modal" and instead of i user window.location.reload() function in index.js file.-->
+                                </div>
+                                </d>
                         </div>
                     </div>
                 </div>
@@ -354,6 +362,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
+
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script> <!-- use the smtp js link from smtpjs.com -->
 
 </body>
 

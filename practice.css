@@ -257,6 +257,38 @@ tr {
   padding: 7px 0;
 }
 
+.modal_footer_section {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0px;
+  padding-bottom: 11px;
+  background: #e9e3e3;
+}
+.modal_footer_section p {
+  margin: 0;
+  padding-bottom: 4px;
+  color: red;
+  font-weight: 500;
+}
+.send__btn {
+  background: green !important;
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+  color: white !important;
+}
+input:focus {
+  outline: none;
+}
+.user_email_input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#user_email {
+  width: 70%;
+  padding: 5px 5px;
+}
+
 /* media query for all device */
 
 @media only screen and (max-width: 688px) {
@@ -309,5 +341,15 @@ tr {
   }
   #show_session {
     font-size: 9px;
+  }
+  #user_email {
+    width: 70%;
+    padding: 2px 2px;
+  }
+  .send__btn {
+    font-size: 13px !important;
+  }
+  .modal_footer_section p {
+    font-size: 13px;
   }
 }

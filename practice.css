@@ -235,7 +235,6 @@ tr {
 #timer_show_modal {
   color: red;
   font-weight: 500;
-  background: yellow;
   padding: 0 5px;
 }
 
@@ -267,7 +266,7 @@ tr {
 .modal_footer_section p {
   margin: 0;
   padding-bottom: 4px;
-  color: red;
+  color: #001bff;
   font-weight: 500;
 }
 .send__btn {
@@ -287,6 +286,9 @@ input:focus {
 #user_email {
   width: 70%;
   padding: 5px 5px;
+}
+#fourth_modal_text {
+  color: red;
 }
 
 /* media query for all device */
@@ -348,8 +350,5 @@ input:focus {
   }
   .send__btn {
     font-size: 13px !important;
-  }
-  .modal_footer_section p {
-    font-size: 13px;
   }
 }

@@ -19,6 +19,7 @@ const scrollId = document.getElementById('result_section');
 const firstModalText = document.getElementById('first_modal_text');
 const secondModalText = document.getElementById('second_modal_text');
 const thirdModalText = document.getElementById('third_modal_text');
+const fourthModalText = document.getElementById('fourth_modal_text');
 
 
 
@@ -957,8 +958,6 @@ const sendmail = () => {
     const sendTimeToMail = showTime.innerHTML;
     const sendSessionToMail = showSession.innerHTML;
     const randomQuestionClickerWebsite = "https://random-question-clicker.netlify.app/";
-    const informationOnProcess = 'Your information is on Processing...';
-    const internetIssue = 'It may take some time due to Internet speed';
 
 
     firstModalText.innerHTML = 'Waiting for a moment...';
@@ -972,6 +971,10 @@ const sendmail = () => {
         thirdModalText.classList.add('animate__animated', 'animate__backInUp');    //add animated css from https://animate.style/
         thirdModalText.innerHTML = '<br/>It may take some time.'
     }, 300);
+    setTimeout(() => {
+        fourthModalText.classList.add('animate__animated', 'animate__backInUp');    //add animated css from https://animate.style/
+        fourthModalText.innerHTML = '<br/>Your Internet is slow. Please keep patients.'
+    }, 2000);
 
     if (userEmail.length > 3) {
 
@@ -981,13 +984,43 @@ const sendmail = () => {
             Password: "fcqrhyktzrasblxz",
             To: userEmail,
             From: "hafizurrahmanbu@gmail.com",
-            Subject: `Congradulations!! You have successFully passed ${numberStrings.length} questions.`,
-            Body: `<p style='font-size:16px'>Dear ${userEmail}! thank you very much for trying the <a href=${randomQuestionClickerWebsite}>random question clicker</a> website. Your performance is given below:</p> <h3>Subject: ${sendSubjectToMail} <br/> Total Question: <span style='color:red'><b> ${sendAllQuestionsToMail} </b></span>  Questions <br/>
-                Total Time: <span style='color:red'><b> ${sendTimerToMail} </b></span> Hour(s) <br/> Finished At: ${sendTimeToMail} ${sendSessionToMail}</h3>` +
+            Subject: `Congradulations!! You have successfully passed ${numberStrings.length} questions.`,
+            Body: `<p style='font-size:16px'>Dear ${userEmail}! thank you very much for trying the <a href=${randomQuestionClickerWebsite}>random question clicker</a> website. Your performance is given below:</p><br/>
+
+            <span style="color: blue;font-size:15px">Your Performance Records:</span>
+
+            <table width="600"  border='1px' collapsing='0' style='border-collapse: collapse;'>
+            <thead>
+              <tr style='border-bottom:none'>
+                <th scope="col" style='background-color:#f0ff00; padding:7px 0;'>Content 1</th>
+                <th scope="col" style='background-color:#f0ff00;'>Content 2</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style='padding:3px 5px;font-weight:bold'>Subject</td>
+                <td style='padding:3px 5px'>${sendSubjectToMail}</td>
+              </tr>
+              <tr>
+                <td style='padding:3px 5px;background-color:#e4e4e4;font-weight:bold'>Total Questions</td>
+                <td style='padding:3px 5px;background-color:#e4e4e4'>${sendAllQuestionsToMail} questions</td>
+              </tr>
+              <tr>
+                <td style='padding:3px 5px;font-weight:bold'>Total Time</td>
+                <td style='padding:3px 5px'>${sendTimerToMail} hour(s)</td>
+              </tr>
+              <tr>
+                <td style='padding:3px 5px;background-color:#e4e4e4;font-weight:bold'>Finished At</td>
+                <td style='padding:3px 5px;background-color:#e4e4e4'>${sendTimeToMail} ${sendSessionToMail}</td>
+              </tr>
+            </tbody>
+          </table> <br/>
+
+` +
                 `<span style='color:#ff002a;font-size:18px'>All questions is given below:</span>` +
                 numberStrings.map((question, index) => {
                     return '<br/> <b> Question-</b>' + `<b>${(index + 1)}:</b>` + ' ' + `<i> ${question.slice(0, -2)} </i>`
-                }) + `<p style='font-size:16px;color:#1900ff'>Thanks for your patient. Is this website is really helpful? Are you think it is the nice one for your study purpose? If yeah, then don't forget to give a reply with your review.</p>`
+                }) + `<p style='font-size:15px;color:#205acc'>Thanks for your patient. Is this website is really helpful? If yeah, then don't forget to give a reply with your review.</p>`
 
         }).then(message => {
             if (message === 'OK') {

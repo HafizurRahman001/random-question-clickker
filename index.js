@@ -16,6 +16,9 @@ const showMonth = document.getElementById('show_month');
 const showYear = document.getElementById('show_year');
 const answerQuestion = document.getElementById('ans_question');
 const scrollId = document.getElementById('result_section');
+const firstModalText = document.getElementById('first_modal_text');
+const secondModalText = document.getElementById('second_modal_text');
+const thirdModalText = document.getElementById('third_modal_text');
 
 
 
@@ -791,7 +794,6 @@ let arr = [];
 
 // main function for showing unique and random value on browser
 const updateRandomNumber = () => {
-    console.log('arr', numberStrings)
     // store unique value in empty array
     while (arr.length < numberStrings.length) {
         let r = Math.floor(Math.random() * (numberStrings.length));
@@ -950,13 +952,26 @@ const setTimerUpdate = () => {
 const sendmail = () => {
     const userEmail = document.getElementById('user_email').value;
     const sendAllQuestionsToMail = allQuestion.innerHTML;
-    const sendTimeToMail = timerShowModal.innerHTML;
+    const sendTimerToMail = timerShowModal.innerHTML;
+    const sendSubjectToMail = showSubject.innerHTML;
+    const sendTimeToMail = showTime.innerHTML;
+    const sendSessionToMail = showSession.innerHTML;
     const randomQuestionClickerWebsite = "https://random-question-clicker.netlify.app/";
+    const informationOnProcess = 'Your information is on Processing...';
+    const internetIssue = 'It may take some time due to Internet speed';
 
 
-    //set a waiting message in the modal until the response of Email.send() function is OK
-    document.getElementById('modal_body_section').innerHTML = `<Your style='color:red'>Please Waiting A Moment....<br/> Your information is on Processing...`
-    document.getElementById('exampleModalLabel').innerHTML = 'KEEP PATIENT';
+    firstModalText.innerHTML = 'Waiting for a moment...';
+    //show the message on the modal after few seconds
+    setTimeout(() => {
+        secondModalText.classList.add('animate__animated', 'animate__backInUp');   //add animated css from https://animate.style/
+        secondModalText.innerHTML = 'Your information is on process...';
+
+    }, 300);
+    setTimeout(() => {
+        thirdModalText.classList.add('animate__animated', 'animate__backInUp');    //add animated css from https://animate.style/
+        thirdModalText.innerHTML = '<br/>It may take some time.'
+    }, 300);
 
     if (userEmail.length > 3) {
 
@@ -967,12 +982,12 @@ const sendmail = () => {
             To: userEmail,
             From: "hafizurrahmanbu@gmail.com",
             Subject: `Congradulations!! You have successFully passed ${numberStrings.length} questions.`,
-            Body: `<p style='font-size:16px'>Dear ${userEmail} thank you very much for try the <a href=${randomQuestionClickerWebsite}>random question clicker</a> website. Your performance is given below:</p> <h3>You Finished: <span style='color:red'><b> ${sendAllQuestionsToMail} </b></span>  Questions <br/>
-                You Get Time: <span style='background-color:yellow;padding:2px'><b> ${sendTimeToMail} </b></span> Hour(s)</h3>` +
-                `<span style='color:crimson;font-size:18px'>All questions is given below:</span>` +
+            Body: `<p style='font-size:16px'>Dear ${userEmail}! thank you very much for trying the <a href=${randomQuestionClickerWebsite}>random question clicker</a> website. Your performance is given below:</p> <h3>Subject: ${sendSubjectToMail} <br/> Total Question: <span style='color:red'><b> ${sendAllQuestionsToMail} </b></span>  Questions <br/>
+                Total Time: <span style='color:red'><b> ${sendTimerToMail} </b></span> Hour(s) <br/> Finished At: ${sendTimeToMail} ${sendSessionToMail}</h3>` +
+                `<span style='color:#ff002a;font-size:18px'>All questions is given below:</span>` +
                 numberStrings.map((question, index) => {
                     return '<br/> <b> Question-</b>' + `<b>${(index + 1)}:</b>` + ' ' + `<i> ${question.slice(0, -2)} </i>`
-                }) + `<p style='font-size:16px;color:#1900ff'>Thanks for your patient. Is this website is really helpful? Are you think it is the nice one for your study purpose? If yeah, then don't forget to give your reply with review.</p>`
+                }) + `<p style='font-size:16px;color:#1900ff'>Thanks for your patient. Is this website is really helpful? Are you think it is the nice one for your study purpose? If yeah, then don't forget to give a reply with your review.</p>`
 
         }).then(message => {
             if (message === 'OK') {

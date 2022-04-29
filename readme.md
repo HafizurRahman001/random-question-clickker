@@ -1,6 +1,6 @@
 ## Subtract elements from an array in JS, but that returns several results
 
-`Example: var arrayExemplo = [2, 5, 9, 10, 15];`
+`Example: var arrayExemplo = [2, 5, 9, 10, 15];`<br/>
 I want to subtract the array element as if the suspected result is: [3, 4, 1, 5];
 Ans:
 

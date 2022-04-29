@@ -34,6 +34,10 @@
             <div class="clock_section">
                 <div class="clock">
                     <div><span id="show_time"></span><sup><span id="show_session"></span></sup></div>
+
+                    <!-- this span is display none, it is use for show time with AM PM as if we can use it to the chart -->
+                    <span id="time_that_need_to_show_chart_X_axis"></span>
+
                 </div>
                 <p> <span id="show_week"></span>, <span id="show_date"></span> <span id="show_month"></span>, <span
                         id="show_year"></span></p>
@@ -356,10 +360,12 @@
             </div>
         </div>
     </div>
+    <img id='xx' src="" alt="">
 
 
 
-    <script src="/index.js"></script>
+
+    <script src="/main-function.js"></script>
 
     <!-- bootstrap js bundle cdn link -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
@@ -368,6 +374,17 @@
 
 
     <script src="https://smtpjs.com/v3/smtp.js"></script> <!-- use the smtp js link from smtpjs.com -->
+
+
+
+    <!-- add google chart cdn js link -->
+    <!-- <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script> -->
+    <!-- <script src="./index.js"></script> -->
+
+    <script src="/chart.js"></script>
+
+
+
 
 </body>
 

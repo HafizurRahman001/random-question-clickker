@@ -7,6 +7,7 @@ const allQuestion = document.getElementById('all_question');
 const showSubject = document.getElementById('show_subject');
 const showSubjectSection = document.getElementById('show_subject_section');
 const showTime = document.getElementById('show_time');
+const timeThatNeedToShowChartXAxis = document.getElementById('time_that_need_to_show_chart_X_axis');
 const showSession = document.getElementById('show_session');
 const setTimer = document.getElementById('timer');
 const timerShowModal = document.getElementById('timer_show_modal');
@@ -42,11 +43,11 @@ const switchButton12 = document.getElementById('switch12');
 
 
 
-
+// ================================functionality of switch button======================================
 
 
 //set as global variable for use to another function
-let numberStrings;  // array element is set globally in this variable by condition
+let SubjectArray;  // array element is set globally in this variable by condition
 let final;
 
 const switchFunction = subject => {
@@ -574,7 +575,7 @@ const switchFunction = subject => {
     //conditions for set array
     if (subject === 'mathematics') {
         curElement = 0;    // set the predefined curElement to 0 as if the previous curElement value is alternate with 0
-        numberStrings = mathematicsArray;    //set the declaring array to the predefined numberStrings array
+        SubjectArray = mathematicsArray;    //set the declaring array to the predefined SubjectArray array
 
         // get the index from the mathematicsArray and set it to the 'arr' array
         for (i of mathematicsArray) {
@@ -591,7 +592,7 @@ const switchFunction = subject => {
 
     } else if (subject === 'optical-mineralogy') {
         curElement = 0;     // set the predefined curElement to 0 as if the previous curElement value is alternate with 0
-        numberStrings = opticalMineralogyArray;    //set the declaring array to the predefined numberStrings array
+        SubjectArray = opticalMineralogyArray;    //set the declaring array to the predefined SubjectArray array
 
         // get the index from the opticalMineralogyArray and set it to the 'arr' array
         for (i of opticalMineralogyArray) {
@@ -608,7 +609,7 @@ const switchFunction = subject => {
 
     } else if (subject === 'hydrology(IM)') {
         curElement = 0;    // set the predefined curElement to 0 as if the previous curElement value is alternate with 0
-        numberStrings = hydrologyArrayByIlliasMahmud;    //set the declaring array to the predefined numberStrings array
+        SubjectArray = hydrologyArrayByIlliasMahmud;    //set the declaring array to the predefined SubjectArray array
 
         // get the index from the hydrologyArrayByIlliasMahmud and set it to the 'arr' array
         for (i of hydrologyArrayByIlliasMahmud) {
@@ -625,7 +626,7 @@ const switchFunction = subject => {
 
     } else if (subject === 'hydrology(sg)') {
         curElement = 0;    // set the predefined curElement to 0 as if the previous curElement value is alternate with 0
-        numberStrings = hydrologyArrayBySukhen;   //set the declaring array to the predefined numberStrings array
+        SubjectArray = hydrologyArrayBySukhen;   //set the declaring array to the predefined SubjectArray array
 
         // get the index from the hydrologyArrayBySukhen and set it to the 'arr' array
         for (i of hydrologyArrayBySukhen) {
@@ -642,7 +643,7 @@ const switchFunction = subject => {
 
     } else if (subject === 'p.s.p') {
         curElement = 0;    // set the predefined curElement to 0 as if the previous curElement value is alternate with 0
-        numberStrings = pspArray;    //set the declaring array to the predefined numberStrings array
+        SubjectArray = pspArray;    //set the declaring array to the predefined SubjectArray array
 
         // get the index from the pspArray and set it to the 'arr' array
         for (i of pspArray) {
@@ -659,7 +660,7 @@ const switchFunction = subject => {
 
     } else if (subject === 'd.s.p') {
         curElement = 0;    // set the predefined curElement to 0 as if the previous curElement value is alternate with 0
-        numberStrings = dspArray;    //set the declaring array to the predefined numberStrings array
+        SubjectArray = dspArray;    //set the declaring array to the predefined SubjectArray array
 
         // get the index from the dspArray and set it to the 'arr' array
         for (i of dspArray) {
@@ -676,7 +677,7 @@ const switchFunction = subject => {
 
     } else if (subject === 'environmental-chemistry') {
         curElement = 0;    // set the predefined curElement to 0 as if the previous curElement value is alternate with 0
-        numberStrings = chemistryArray;    //set the declaring array to the predefined numberStrings array
+        SubjectArray = chemistryArray;    //set the declaring array to the predefined SubjectArray array
 
         // get the index from the chemistryArray and set it to the 'arr' array
         for (i of chemistryArray) {
@@ -693,7 +694,7 @@ const switchFunction = subject => {
 
     } else if (subject === 'physics-3') {
         curElement = 0;    // set the predefined curElement to 0 as if the previous curElement value is alternate with 0
-        numberStrings = physics_3_Array;    //set the declaring array to the predefined numberStrings array
+        SubjectArray = physics_3_Array;    //set the declaring array to the predefined SubjectArray array
 
         // get the index from the physics_3_Array and set it to the 'arr' array
         for (i of physics_3_Array) {
@@ -710,7 +711,7 @@ const switchFunction = subject => {
 
     } else if (subject === 'physics-2') {
         curElement = 0;    // set the predefined curElement to 0 as if the previous curElement value is alternate with 0
-        numberStrings = physics_2_Array;   //set the declaring array to the predefined numberStrings array
+        SubjectArray = physics_2_Array;   //set the declaring array to the predefined SubjectArray array
 
         // get the index from the physics_2_Array and set it to the 'arr' array
         for (i of physics_2_Array) {
@@ -727,7 +728,7 @@ const switchFunction = subject => {
 
     } else if (subject === 'programming') {
         curElement = 0;     // set the predefined curElement to 0 as if the previous curElement value is alternate with 0
-        numberStrings = programmingArray;    //set the declaring array to the predefined numberStrings array
+        SubjectArray = programmingArray;    //set the declaring array to the predefined SubjectArray array
 
         // get the index from the programmingArray and set it to the 'arr' array
         for (i of programmingArray) {
@@ -744,7 +745,7 @@ const switchFunction = subject => {
 
     } else if (subject === 'stratigraphy') {
         curElement = 0;     // set the predefined curElement to 0 as if the previous curElement value is alternate with 0      
-        numberStrings = stratigraphyArray;    //set the declaring array to the predefined numberStrings array
+        SubjectArray = stratigraphyArray;    //set the declaring array to the predefined SubjectArray array
 
         // get the index from the stratigraphyArray and set it to the 'arr' array
         for (i of stratigraphyArray) {
@@ -761,7 +762,7 @@ const switchFunction = subject => {
 
     } else if (subject === 'crystallography') {
         curElement = 0;    // set the predefined curElement to 0 as if the previous curElement value is alternate with 0
-        numberStrings = crystallographyArray;     //set the declaring array to the predefined numberStrings array
+        SubjectArray = crystallographyArray;     //set the declaring array to the predefined SubjectArray array
 
         // get the index from the crystallographyArray and set it to the 'arr' array
         for (i of crystallographyArray) {
@@ -777,42 +778,66 @@ const switchFunction = subject => {
         askQuestionBtn.disabled = false;
 
     } else {
-        numberStrings = [];
+        SubjectArray = [];
     };
 
     // show array length as a index number in the browser
-    indexOfArr.innerHTML = numberStrings.length;
-    final = numberStrings.length;
+    indexOfArr.innerHTML = SubjectArray.length;
+    final = SubjectArray.length;
 
 };
-
-
 
 
 
 let curElement = 0;
 let arr = [];
 
-// main function for showing unique and random value on browser
+let chartTimeToEmailArray = [];
+let chartTimerToEmailArray = [];
+let timerForMaximumTime = [];
+
+
+// ==========================main function for showing unique and random value on browser=======================
 const updateRandomNumber = () => {
+
+    // store time to the chartTimeToEmailArray array in every click;
+    chartTimeToEmailArray.push(timeThatNeedToShowChartXAxis.innerHTML);
+
+    timerForMaximumTime.push(setTimer.innerHTML);
+
+
+
+    // ---------------------------turn the hh:mm:ss into seconds for showing on the chart y axis (start)----------------------------
+    let hms = setTimer.innerHTML;   // your input string time
+    let splitTime = hms.split(':'); // split it at the colons
+
+    // minutes are worth 60 seconds. Hours are worth 60 minutes.
+    let seconds = (+splitTime[0]) * 60 * 60 + (+splitTime[1]) * 60 + (+splitTime[2]);
+    // -------------------------turn the hh:mm:ss into seconds for showing on the chart y axis (end)----------------------------------
+
+    //store timer to the chartTimerToEmailArray
+    chartTimerToEmailArray.push(seconds);
+
+
+
     // store unique value in empty array
-    while (arr.length < numberStrings.length) {
-        let r = Math.floor(Math.random() * (numberStrings.length));
+    while (arr.length < SubjectArray.length) {
+        let r = Math.floor(Math.random() * (SubjectArray.length));
         if (arr.indexOf(r) === -1) {
             arr.push(r)
         };
     };
 
-    if (curElement == numberStrings.length) {
+    if (curElement == SubjectArray.length) {
         curElement = 0
     };
 
     // pick up the element from 'arr' array and increasing curElement by clicking
     let newElement = arr[curElement++];
-    let subjectName = (numberStrings[newElement]);
+    let subjectName = (SubjectArray[newElement]);
 
 
-    // console.log('numberStrings:', numberStrings);
+    // console.log('SubjectArray:', SubjectArray);
     // console.log('arr:', arr)
     // console.log('newElement:', newElement)
     // console.log('curElement 2:', curElement)
@@ -831,10 +856,10 @@ const updateRandomNumber = () => {
         finish.click();     // open the modal by auto clicking
 
         // condition for add 0 before the number if it is less than 10;
-        if (numberStrings.length < 10) {
-            allQuestion.innerHTML = numberStrings.length = '0' + numberStrings.length;
-        } else if (numberStrings.length > 99) {
-            allQuestion.innerHTML = numberStrings.length;
+        if (SubjectArray.length < 10) {
+            allQuestion.innerHTML = SubjectArray.length = '0' + SubjectArray.length;
+        } else if (SubjectArray.length > 10) {
+            allQuestion.innerHTML = SubjectArray.length;
         };
 
         timerShowModal.innerHTML = displayTime;     // show timer to modals
@@ -844,7 +869,7 @@ const updateRandomNumber = () => {
 }
 
 
-// add clock to the website
+// =================================add clock to the website===============================================
 const timeSet = () => {
     let date = new Date();
     let h = date.getHours();
@@ -872,6 +897,8 @@ const timeSet = () => {
     const time = h + ":" + m + ":" + s;
     showTime.innerHTML = time;
     showSession.innerHTML = session;
+
+    timeThatNeedToShowChartXAxis.innerHTML = h + ":" + m + ":" + s + ' ' + session;
 
 
     //get date
@@ -912,7 +939,7 @@ const timeSet = () => {
 setInterval(timeSet, 1000);
 
 
-// add timer to browser
+// ========================================add timer to browser (start)============================================
 let timer;
 let displayTime;
 
@@ -947,9 +974,11 @@ const setTimerUpdate = () => {
     }, 1000)
 }
 
+// ========================================add timer to browser (end)============================================
 
 
-// send a free email to the user email account
+
+// =============================send a free email to the user email account (start)======================================
 const sendmail = () => {
     const userEmail = document.getElementById('user_email').value;
     const sendAllQuestionsToMail = allQuestion.innerHTML;
@@ -957,7 +986,7 @@ const sendmail = () => {
     const sendSubjectToMail = showSubject.innerHTML;
     const sendTimeToMail = showTime.innerHTML;
     const sendSessionToMail = showSession.innerHTML;
-    const randomQuestionClickerWebsite = "https://random-question-clicker.netlify.app/";
+    const randomQuestionClickerWebsite = "https://random-question-clicker.netlify.app/";    //my website link
 
 
     firstModalText.innerHTML = 'Waiting for a moment...';
@@ -976,50 +1005,349 @@ const sendmail = () => {
         fourthModalText.innerHTML = '<br/>Your Internet is slow. Please keep patients.'
     }, 2000);
 
-    if (userEmail.length > 3) {
+
+
+
+    const chartDataLabelsArray = chartTimeToEmailArray;            //set the chartTimeToEmailArray to the chartDataLabelsArray variable
+    const chartDatasetLabelsArray = chartTimerToEmailArray;   //set the chartTimerToEmailArray to the chartDatasetLabelsArray variable
+
+
+    //slicing the chartDataLabelsArray array with the difference of 35 (such as 0 -35, 211 - 245)
+    const sliceChartDataLabel__1 = chartDataLabelsArray.slice(0, 30);
+    const sliceChartDataLabel__2 = chartDataLabelsArray.slice(30, 60);
+    const sliceChartDataLabel__3 = chartDataLabelsArray.slice(60, 90);
+    const sliceChartDataLabel__4 = chartDataLabelsArray.slice(90, 120);
+    const sliceChartDataLabel__5 = chartDataLabelsArray.slice(120, 150);
+    const sliceChartDataLabel__6 = chartDataLabelsArray.slice(150, 180);
+    const sliceChartDataLabel__7 = chartDataLabelsArray.slice(180, 210);
+    const sliceChartDataLabel__8 = chartDataLabelsArray.slice(210, 240);
+    const sliceChartDataLabel__9 = chartDataLabelsArray.slice(240, 270);
+    const sliceChartDataLabel__10 = chartDataLabelsArray.slice(270, 300);
+    const sliceChartDataLabel__11 = chartDataLabelsArray.slice(300, 330);
+    const sliceChartDataLabel__12 = chartDataLabelsArray.slice(330, 360);
+    const sliceChartDataLabel__13 = chartDataLabelsArray.slice(360, 390);
+    const sliceChartDataLabel__14 = chartDataLabelsArray.slice(390, 420);
+    const sliceChartDataLabel__15 = chartDataLabelsArray.slice(420, 450);
+
+
+
+    // set the chart Headline as a global variable
+    let chartVariable__1;
+    let chartVariable__2;
+    let chartVariable__3;
+    let chartVariable__4;
+    let chartVariable__5;
+    let chartVariable__6;
+    let chartVariable__7;
+    let chartVariable__8;
+    let chartVariable__9;
+    let chartVariable__10;
+    let chartVariable__11;
+    let chartVariable__12;
+    let chartVariable__13;
+    let chartVariable__14;
+    let chartVariable__15;
+
+
+
+
+    // declaring the chartLInkToEmail globally as if we can get access ti image tag;
+    let chartLinkToEmail__1;
+    let chartLinkToEmail__2;
+    let chartLinkToEmail__3;
+    let chartLinkToEmail__4;
+    let chartLinkToEmail__5;
+    let chartLinkToEmail__6;
+    let chartLinkToEmail__7;
+    let chartLinkToEmail__8;
+    let chartLinkToEmail__9;
+    let chartLinkToEmail__10;
+    let chartLinkToEmail__11;
+    let chartLinkToEmail__12;
+    let chartLinkToEmail__13;
+    let chartLinkToEmail__14;
+    let chartLinkToEmail__15;
+
+
+
+
+    // ------------------------------------chartLinkToEmail condition (start)--------------------------
+
+    // we set a condition for chartLinkToEmail as if when the chartLinkToEmail variables which length is 0 are not show in the image tag and which length are not 0 they all are show in image tag 
+
+    if (sliceChartDataLabel__1.length != 0) {
+
+        chartLinkToEmail__1 = 'https://quickchart.io/chart?c={type:"bar",data:{labels:' + `${JSON.stringify(sliceChartDataLabel__1)}` + ', datasets:[{label:"Time",backgroundColor:"rgba(250, 118, 16, 1.0)",data:[' + `${chartDatasetLabelsArray.slice(0, 30)}` + ']}]}}';
+
+        chartVariable__1 = `Here is showing the data from : ${chartDataLabelsArray.slice(0, 1)} - ${chartDataLabelsArray.slice(29, 30)}`;
+
+    }
+    if (sliceChartDataLabel__2.length != 0) {
+
+        chartLinkToEmail__2 = 'https://quickchart.io/chart?c={type:"bar",data:{labels:' + `${JSON.stringify(sliceChartDataLabel__2)}` + ', datasets:[{label:"Time",backgroundColor:"rgba(255,102,102, 1.0)",data:[' + `${chartDatasetLabelsArray.slice(30, 60)}` + ']}]}}';
+
+        chartVariable__2 = `Here is showing the data from : ${chartDataLabelsArray.slice(30, 31)} - ${chartDataLabelsArray.slice(59, 60)}`;
+
+    }
+    if (sliceChartDataLabel__3.length != 0) {
+
+        chartLinkToEmail__3 = 'https://quickchart.io/chart?c={type:"bar",data:{labels:' + `${JSON.stringify(sliceChartDataLabel__3)}` + ', datasets:[{label:"Time",backgroundColor:"rgba(0, 128, 128, 1.0)",data:[' + `${chartDatasetLabelsArray.slice(60, 90)}` + ']}]}}';
+
+        chartVariable__3 = `Here is showing the data from : ${chartDataLabelsArray.slice(60, 61)} - ${chartDataLabelsArray.slice(89, 90)}`;
+
+    }
+    if (sliceChartDataLabel__4.length != 0) {
+
+        chartLinkToEmail__4 = 'https://quickchart.io/chart?c={type:"bar",data:{labels:' + `${JSON.stringify(sliceChartDataLabel__4)}` + ', datasets:[{label:"Time",backgroundColor:"rgba(0, 0, 255, 1.0)",data:[' + `${chartDatasetLabelsArray.slice(90, 120)}` + ']}]}}';
+
+        chartVariable__4 = `Here is showing the data from : ${chartDataLabelsArray.slice(90, 91)} - ${chartDataLabelsArray.slice(119, 120)}`;
+
+    }
+    if (sliceChartDataLabel__5.length != 0) {
+
+        chartLinkToEmail__5 = 'https://quickchart.io/chart?c={type:"bar",data:{labels:' + `${JSON.stringify(sliceChartDataLabel__5)}` + ', datasets:[{label:"Time",backgroundColor:"rgba(255, 128, 237, 1.0)",data:[' + `${chartDatasetLabelsArray.slice(120, 150)}` + ']}]}}';
+
+        chartVariable__5 = `Here is showing the data from : ${chartDataLabelsArray.slice(120, 121)} - ${chartDataLabelsArray.slice(149, 150)}`;
+
+    }
+    if (sliceChartDataLabel__6.length != 0) {
+
+        chartLinkToEmail__6 = 'https://quickchart.io/chart?c={type:"bar",data:{labels:' + `${JSON.stringify(sliceChartDataLabel__6)}` + ', datasets:[{label:"Time",backgroundColor:"rgba(128, 0, 128, 1.0)",data:[' + `${chartDatasetLabelsArray.slice(150, 180)}` + ']}]}}';
+
+        chartVariable__6 = `Here is showing the data from : ${chartDataLabelsArray.slice(150, 151)} - ${chartDataLabelsArray.slice(179, 180)}`;
+
+    }
+    if (sliceChartDataLabel__7.length != 0) {
+
+        chartLinkToEmail__7 = 'https://quickchart.io/chart?c={type:"bar",data:{labels:' + `${JSON.stringify(sliceChartDataLabel__7)}` + ', datasets:[{label:"Time",backgroundColor:"rgba(70, 132, 153, 1.0)",data:[' + `${chartDatasetLabelsArray.slice(180, 210)}` + ']}]}}';
+
+        chartVariable__7 = ` Here is showing the data from : ${chartDataLabelsArray.slice(180, 181)} - ${chartDataLabelsArray.slice(209, 210)}`;
+
+    }
+    if (sliceChartDataLabel__8.length != 0) {
+
+        chartLinkToEmail__8 = 'https://quickchart.io/chart?c={type:"bar",data:{labels:' + `${JSON.stringify(sliceChartDataLabel__8)}` + ', datasets:[{label:"Time",backgroundColor:"rgba(255, 127, 80, 1.0)",data:[' + `${chartDatasetLabelsArray.slice(210, 240)}` + ']}]}}';
+
+        chartVariable__8 = `Here is showing the data from : ${chartDataLabelsArray.slice(210, 211)} - ${chartDataLabelsArray.slice(239, 240)}`;
+
+    }
+    if (sliceChartDataLabel__9.length != 0) {
+
+        chartLinkToEmail__9 = 'https://quickchart.io/chart?c={type:"bar",data:{labels:' + `${JSON.stringify(sliceChartDataLabel__9)}` + ', datasets:[{label:"Time",backgroundColor:"rgba(218, 165, 32, 1.0)",data:[' + `${chartDatasetLabelsArray.slice(240, 270)}` + ']}]}}';
+
+        chartVariable__9 = `Here is showing the data from : ${chartDataLabelsArray.slice(240, 241)} - ${chartDataLabelsArray.slice(269, 270)}`;
+    }
+    if (sliceChartDataLabel__10.length != 0) {
+
+        chartLinkToEmail__10 = 'https://quickchart.io/chart?c={type:"bar",data:{labels:' + `${JSON.stringify(sliceChartDataLabel__10)}` + ', datasets:[{label:"Time",backgroundColor:"rgba(121, 64, 68, 1.0)",data:[' + `${chartDatasetLabelsArray.slice(270, 300)}` + ']}]}}';
+
+        chartVariable__10 = `Here is showing the data from : ${chartDataLabelsArray.slice(270, 271)} - ${chartDataLabelsArray.slice(299, 300)}`;
+
+    }
+    if (sliceChartDataLabel__11.length != 0) {
+
+        chartLinkToEmail__11 = 'https://quickchart.io/chart?c={type:"bar",data:{labels:' + `${JSON.stringify(sliceChartDataLabel__11)}` + ', datasets:[{label:"Time",backgroundColor:"rgba(250, 118, 16, 1.0)",data:[' + `${chartDatasetLabelsArray.slice(300, 330)}` + ']}]}}';
+
+        chartVariable__11 = `Here is showing the data from : ${chartDataLabelsArray.slice(300, 301)} - ${chartDataLabelsArray.slice(329, 330)}`
+
+    }
+    if (sliceChartDataLabel__12.length != 0) {
+
+        chartLinkToEmail__12 = 'https://quickchart.io/chart?c={type:"bar",data:{labels:' + `${JSON.stringify(sliceChartDataLabel__12)}` + ', datasets:[{label:"Time",backgroundColor:"rgba(255,102,102, 1.0)",data:[' + `${chartDatasetLabelsArray.slice(330, 360)}` + ']}]}}';
+
+        chartVariable__12 = `Here is showing the data from : ${chartDataLabelsArray.slice(330, 331)} - ${chartDataLabelsArray.slice(359, 360)}`
+
+    }
+    if (sliceChartDataLabel__13.length != 0) {
+
+        chartLinkToEmail__13 = 'https://quickchart.io/chart?c={type:"bar",data:{labels:' + `${JSON.stringify(sliceChartDataLabel__13)}` + ', datasets:[{label:"Time",backgroundColor:"rgba(0, 128, 128, 1.0)",data:[' + `${chartDatasetLabelsArray.slice(360, 390)}` + ']}]}}';
+
+        chartVariable__13 = `Here is showing the data from : ${chartDataLabelsArray.slice(360, 361)} - ${chartDataLabelsArray.slice(389, 390)}`
+
+    }
+    if (sliceChartDataLabel__14.length != 0) {
+
+        chartLinkToEmail__14 = 'https://quickchart.io/chart?c={type:"bar",data:{labels:' + `${JSON.stringify(sliceChartDataLabel__14)}` + ', datasets:[{label:"Time",backgroundColor:"rgba(0, 0, 255, 1.0)",data:[' + `${chartDatasetLabelsArray.slice(390, 420)}` + ']}]}}';
+
+
+        chartVariable__14 = `Here is showing the data from : ${chartDataLabelsArray.slice(390, 391)} - ${chartDataLabelsArray.slice(419, 420)}`
+
+    }
+    if (sliceChartDataLabel__15.length != 0) {
+
+        chartLinkToEmail__15 = 'https://quickchart.io/chart?c={type:"bar",data:{labels:' + `${JSON.stringify(sliceChartDataLabel__15)}` + ', datasets:[{label:"Time",backgroundColor:"rgba(255, 128, 237, 1.0)",data:[' + `${chartDatasetLabelsArray.slice(420, 450)}` + ']}]}}';
+
+
+        chartVariable__15 = `Here is showing the data from : ${chartDataLabelsArray.slice(420, 421)} - ${chartDataLabelsArray.slice(449, 450)}`
+
+    }
+
+    // ------------------------------------chartLinkToEmail condition (end)--------------------------
+
+
+
+
+
+    //------------- the time array elements turn into the seconds as if we can easily determine the maximum number (start)----------
+
+    let timeArray = timerForMaximumTime;
+    let splittingTimeArray = [];
+    timeArray.map(element => {
+        splittingTimeArray.push(element.split(':'));
+    })
+
+
+    let secondsArray = [];
+    splittingTimeArray.map(e => {
+        secondsArray.push((+e[0]) * 3600 + (+e[1]) * 60 + (+e[2]));
+    })
+
+
+
+
+
+    // subtract the every element one by one
+    var newSecondsArray = [];
+    for (i = 0; i < secondsArray.length - 1; i++) {
+        newSecondsArray[i] = secondsArray[i + 1] - secondsArray[i];
+    }
+
+
+
+
+    // Now turn the maximum seconds into the hh:mm:ss shape
+    let maximumSeconds = Math.max(...newSecondsArray)
+
+
+
+    let secondsToHours = Math.floor(maximumSeconds / 3600);
+    let secondsToMinute = Math.floor(maximumSeconds % 3600 / 60);
+    let secondsToSeconds = Math.floor(maximumSeconds % 3600 % 60);
+
+
+
+    if (secondsToHours < 10) {
+        secondsToHours = "0" + secondsToHours;
+    }
+    if (secondsToMinute < 10) {
+        secondsToMinute = "0" + secondsToMinute;
+    }
+    if (secondsToSeconds < 10) {
+        secondsToSeconds = "0" + secondsToSeconds;
+    }
+
+    let secondsToHoursDisplay = secondsToHours > 0 ? secondsToHours + (secondsToHours == 1 ? " hour, " : " hours, ") : "";
+    let secondsToMinutesDisplay = secondsToMinute > 0 ? secondsToMinute + (secondsToMinute == 1 ? " minute, " : " minutes, ") : "";
+    let secondsToSecondsDisplay = secondsToSeconds > 0 ? secondsToSeconds + (secondsToSeconds == 1 ? " second" : " seconds") : "";
+    displayMaximumSecondsToStandardTimeShape = secondsToHoursDisplay + secondsToMinutesDisplay + secondsToSecondsDisplay;
+
+
+    //------------- the time array elements turn into the seconds as if we can easily determine the maximum number (end)-------------
+
+
+
+
+    //if user email input is greater than 9 character then it allowed to send the email.
+
+    if (userEmail.length > 9) {
 
         Email.send({
             Host: "smtp.gmail.com",
             Username: "hafizurrahmanbu@gmail.com",
             Password: "fcqrhyktzrasblxz",
-            To: userEmail,
+            To: `${userEmail},hafizurrahmanbu@gmail.com`,
             From: "hafizurrahmanbu@gmail.com",
-            Subject: `Congradulations!! You have successfully passed ${numberStrings.length} questions.`,
+            Subject: `Congradulations!! You have successfully passed ${SubjectArray.length} questions.`,
             Body: `<p style='font-size:16px'>Dear ${userEmail}! thank you very much for trying the <a href=${randomQuestionClickerWebsite}>random question clicker</a> website. Your performance is given below:</p><br/>
 
             <span style="color: blue;font-size:15px">Your Performance Records:</span>
 
-            <table width="600"  border='1px' collapsing='0' style='border-collapse: collapse;'>
+            <table width="100%"  border='1px' collapsing='0' style='border-collapse: collapse;'>
             <thead>
-              <tr style='border-bottom:none'>
-                <th scope="col" style='background-color:#f0ff00; padding:7px 0;'>Content 1</th>
-                <th scope="col" style='background-color:#f0ff00;'>Content 2</th>
+              <tr >
+                <th scope="col" style='background:linear-gradient(#dcdc22,yellow,#dcdc22);font-size:14px; padding:7px 0;'>Content 1</th>
+                <th scope="col" style='background:linear-gradient(#dcdc22,yellow,#dcdc22);font-size:14px;'>Content 2</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td style='padding:3px 5px;font-weight:bold'>Subject</td>
-                <td style='padding:3px 5px'>${sendSubjectToMail}</td>
+                <td style='padding:5px 12px;font-weight:bold'>Subject</td>
+                <td style='padding:5px 12px;font-weight:bold'>${sendSubjectToMail}</td>
               </tr>
               <tr>
-                <td style='padding:3px 5px;background-color:#e4e4e4;font-weight:bold'>Total Questions</td>
-                <td style='padding:3px 5px;background-color:#e4e4e4'>${sendAllQuestionsToMail} questions</td>
+                <td style='padding:5px 12px;background:linear-gradient(#cbcbcb,#e4e4e4,#b9b9b9);font-weight:bold'>Total Question</td>
+                <td style='padding:5px 12px;background:linear-gradient(#cbcbcb,#e4e4e4,#b9b9b9);font-weight:bold'>${sendAllQuestionsToMail} questions</td>
               </tr>
               <tr>
-                <td style='padding:3px 5px;font-weight:bold'>Total Time</td>
-                <td style='padding:3px 5px'>${sendTimerToMail} hour(s)</td>
+                <td style='padding:5px 12px;font-weight:bold'>Maximum Spending Time</td>
+                <td style='padding:5px 12px;font-weight:bold;'>${displayMaximumSecondsToStandardTimeShape}</td>
               </tr>
               <tr>
-                <td style='padding:3px 5px;background-color:#e4e4e4;font-weight:bold'>Finished At</td>
-                <td style='padding:3px 5px;background-color:#e4e4e4'>${sendTimeToMail} ${sendSessionToMail}</td>
+                <td style='padding:5px 12px;background:linear-gradient(#cbcbcb,#e4e4e4,#b9b9b9);font-weight:bold'>Finished At</td>
+                <td style='padding:5px 12px;background:linear-gradient(#cbcbcb,#e4e4e4,#b9b9b9);font-weight:bold'>${sendTimeToMail} ${sendSessionToMail}</td>
+              </tr>
+              <tr>
+                <td style='padding:5px 12px;font-weight:bold'>Total Time</td>
+                <td style='padding:5px 12px;font-weight:bold;'>${sendTimerToMail} hour(s)</td>
               </tr>
             </tbody>
-          </table> <br/>
+          </table> <br/>`+
+                `
+                <div style="background:#e6e6e66b;border: 2px dashed gray;padding: 3px 10px;border-radius: 5px;">
+                <h2 style='margin-bottom:10px; margin-top:0px;font-size:20px;color:#FF4040;'>Chart(s) According to your performance:</h2>
+                <h3 style='margin:0;'>What the Chart is Describing?</h3>
+                <p style='margin:0;font-size:17px;font-family:"Roboto";'>The chart describes that how much time <span style='color:#FF4040'>(as seconds)</span> you spend for going through from one question to another and it also describes that what was the actual time <span style='color:#FF4040'>(as hh:mm:ss)</span> from going to one question to another. We oriented the chart as a bar chart where spending time <span style='color:#FF4040'>(as seconds)</span> is placed about the <span style='font-weight:bold'>'Y'</span> axis of the chart and actual time <span style='color:#FF4040'>(hh:mm:ss)</span> is placed about the <span style='font-weight:bold'>'X'</span> axis. It might divided the chart in many more on the basis of a lots of data. </p>
+                </div> ` +
 
-` +
-                `<span style='color:#ff002a;font-size:18px'>All questions is given below:</span>` +
-                numberStrings.map((question, index) => {
-                    return '<br/> <b> Question-</b>' + `<b>${(index + 1)}:</b>` + ' ' + `<i> ${question.slice(0, -2)} </i>`
+                `<div>
+                <h3 style="font-size:19px;color: #080808;background:yellow;padding-left: 7px;">${chartVariable__1 === undefined ? ' ' : chartVariable__1}</h3>
+                <img style='width:97%;border: 2px solid #70707040;border-radius: 7px;padding-left: 10px;padding-bottom: 10px;${chartVariable__1 === undefined ? 'display:none' : 'display:block'}' src='${chartLinkToEmail__1}' alt="">
+
+                <h3 style="font-size:19px;color: #080808;background:yellow;padding-left: 7px;">${chartVariable__2 === undefined ? ' ' : chartVariable__2}</h3>
+                <img style='width:97%;border: 2px solid #70707040;border-radius: 7px;padding-left: 10px;padding-bottom: 10px;${chartVariable__2 === undefined ? 'display:none' : 'display:block'}' src='${chartLinkToEmail__2}' alt="">
+
+                <h3 style="font-size:19px;color: #080808;background:yellow;padding-left: 7px;">${chartVariable__3 === undefined ? ' ' : chartVariable__3}</h3>
+                <img style='width:97%;border: 2px solid #70707040;border-radius: 7px;padding-left: 10px;padding-bottom: 10px;${chartVariable__3 === undefined ? 'display:none' : 'display:block'}' src='${chartLinkToEmail__3}' alt="">
+
+                <h3 style="font-size:19px;color: #080808;background:yellow;padding-left: 7px;">${chartVariable__4 === undefined ? ' ' : chartVariable__4}</h3>
+                <img style='width:97%;border: 2px solid #70707040;border-radius: 7px;padding-left: 10px;padding-bottom: 10px;${chartVariable__4 === undefined ? 'display:none' : 'display:block'}' src='${chartLinkToEmail__4}' alt="">
+
+                <h3 style="font-size:19px;color: #080808;background:yellow;padding-left: 7px;">${chartVariable__5 === undefined ? ' ' : chartVariable__5}</h3>
+                <img style='width:97%;border: 2px solid #70707040;border-radius: 7px;padding-left: 10px;padding-bottom: 10px;${chartVariable__5 === undefined ? 'display:none' : 'display:block'}' src='${chartLinkToEmail__5}' alt="">
+
+                <h3 style="font-size:19px;color: #080808;background:yellow;padding-left: 7px;">${chartVariable__6 === undefined ? ' ' : chartVariable__6}</h3>
+                <img style='width:97%;border: 2px solid #70707040;border-radius: 7px;padding-left: 10px;padding-bottom: 10px;${chartVariable__6 === undefined ? 'display:none' : 'display:block'}' src='${chartLinkToEmail__6}' alt="">
+
+                <h3 style="font-size:19px;color: #080808;background:yellow;padding-left: 7px;">${chartVariable__7 === undefined ? ' ' : chartVariable__7}</h3>
+                <img style='width:97%;border: 2px solid #70707040;border-radius: 7px;padding-left: 10px;padding-bottom: 10px;${chartVariable__7 === undefined ? 'display:none' : 'display:block'}' src='${chartLinkToEmail__7}' alt="">
+
+                <h3 style="font-size:19px;color: #080808;background:yellow;padding-left: 7px;">${chartVariable__8 === undefined ? ' ' : chartVariable__8}</h3>
+                <img style='width:97%;border: 2px solid #70707040;border-radius: 7px;padding-left: 10px;padding-bottom: 10px;${chartVariable__8 === undefined ? 'display:none' : 'display:block'}' src='${chartLinkToEmail__8}' alt="">
+
+                <h3 style="font-size:19px;color: #080808;background:yellow;padding-left: 7px;">${chartVariable__9 === undefined ? ' ' : chartVariable__9}</h3>
+                <img style='width:97%;border: 2px solid #70707040;border-radius: 7px;padding-left: 10px;padding-bottom: 10px;${chartVariable__9 === undefined ? 'display:none' : 'display:block'}' src='${chartLinkToEmail__9}' alt="">
+
+                <h3 style="font-size:19px;color: #080808;background:yellow;padding-left: 7px;">${chartVariable__10 === undefined ? ' ' : chartVariable__10}</h3>
+                <img style='width:97%;border: 2px solid #70707040;border-radius: 7px;padding-left: 10px;padding-bottom: 10px;${chartVariable__10 === undefined ? 'display:none' : 'display:block'}' src='${chartLinkToEmail__10}' alt="">
+
+                <h3 style="font-size:19px;color: #080808;background:yellow;padding-left: 7px;">${chartVariable__11 === undefined ? ' ' : chartVariable__11}</h3>
+                <img style='width:97%;border: 2px solid #70707040;border-radius: 7px;padding-left: 10px;padding-bottom: 10px;${chartVariable__11 === undefined ? 'display:none' : 'display:block'}' src='${chartLinkToEmail__11}' alt="">
+
+                <h3 style="font-size:19px;color: #080808;background:yellow;padding-left: 7px;">${chartVariable__12 === undefined ? ' ' : chartVariable__12}</h3>
+                <img style='width:97%;border: 2px solid #70707040;border-radius: 7px;padding-left: 10px;padding-bottom: 10px;${chartVariable__12 === undefined ? 'display:none' : 'display:block'}' src='${chartLinkToEmail__12}' alt="">
+
+                <h3 style="font-size:19px;color: #080808;background:yellow;padding-left: 7px;">${chartVariable__13 === undefined ? ' ' : chartVariable__13}</h3>
+                <img style='width:97%;border: 2px solid #70707040;border-radius: 7px;padding-left: 10px;padding-bottom: 10px;${chartVariable__13 === undefined ? 'display:none' : 'display:block'}' src='${chartLinkToEmail__13}' alt="">
+
+                <h3 style="font-size:19px;color: #080808;background:yellow;padding-left: 7px;">${chartVariable__14 === undefined ? ' ' : chartVariable__14}</h3>
+                <img style='width:97%;border: 2px solid #70707040;border-radius: 7px;padding-left: 10px;padding-bottom: 10px;${chartVariable__14 === undefined ? 'display:none' : 'display:block'}' src='${chartLinkToEmail__14}' alt="">
+
+                <h3 style="font-size:19px;color: #080808;background:yellow;padding-left: 7px;">${chartVariable__15 === undefined ? ' ' : chartVariable__15}</h3>
+                <img style=width:97%;border: 2px solid #70707040;border-radius: 7px;padding-left: 10px;padding-bottom: 10px;${chartVariable__15 === undefined ? 'display:none' : 'display:block'}' src='${chartLinkToEmail__15}' alt="">
+                </div>`+
+                `<span style='color:#FF4040;font-size:19px;color:#ff4040;font-weight:600;'>All questions you just have finished are given below:</span>` +
+                SubjectArray.map((question, index) => {
+                    return '<br/> <b> Question-</b>' + `<b>${(index + 1)}:</b>` + ' ' + `${question.slice(0, -2)}`
                 }) + `<p style='font-size:15px;color:#205acc'>Thanks for your patient. Is this website is really helpful? If yeah, then don't forget to give a reply with your review.</p>`
 
         }).then(message => {
@@ -1034,6 +1362,8 @@ const sendmail = () => {
 
 }
 
+// ===========================send a free email to the user email account (end)==================================
+
 
 
 
@@ -1041,9 +1371,9 @@ const sendmail = () => {
 //declaring array
 let crystallographyArray = ['Crystallography', 'Crystal', 'general characteristics of crystal', 'Perfect crystal', 'Crystalline', 'Amorphous substance', 'Mineral', 'Characteristics of Mineral', 'Unit cell', 'Space lattice', 'Why Crystallography in Geosciences? / Importance of crystallography / Why study crystallography', 'Descriptive definition of crystallography / what subject the crystallography includes? / What the crystallography discuss about?', 'Why crystals have beautiful external form?', 'Why do we study crystallography? ', 'Unit cell Vs. Space lattice / difference between Unit cell Vs. Space lattice', 'Crystal vs. Crystalline vs. Amorphous / difference between Crystal vs. Crystalline vs. Amorphous', '1)	Euhedral', 'Subhedral', 'Anhedral', 'Euhedral vs. Subhedral vs Anhedral/ difference between Euhedral vs. Subhedral vs Anhedral', 'Faces', 'like face', 'unlike face', 'type of faces?', 'Edges', 'Interfacial angle', 'Solid angles', 'Form', 'Crystallographic axes', 'Intercepts', 'Lattice constant or Lattice parameter', 'Crystal Form', 'how can crystal form classified?', 'simple form', 'combination form', 'open form', 'Close form', 'General form', 'Special form', 'discuss Common forms in Crystallography', 'pedion', 'pinacoid', 'Prism', 'Pyramid', 'Dome', 'what is symmetry?', 'Describe symmetry with proper diagram/example', 'Element of Symmetry', 'Symmetry element', 'Axis of symmetry (with statement)', 'Plane of symmetry (with statement)', 'Types of symmetry?', 'center of symmetry (with statement)', 'Symmetry Operations', 'types of symmetry operations', 'Rotation Symmetry', 'types of rotational symmetry axes?', '1-Fold Rotation Axis', '2-fold Rotation Axis', '3-Fold Rotation Axis', '4-Fold Rotation Axis', '6-Fold Rotation Axis', 'what is Crystal System', 'how can crystal classified of?', 'name of 7 crystal system', 'cubic', 'Tetragonal', 'Orthorhombic', 'Rhombohedral', 'Hexagonal', 'Monoclinic', 'Triclinic', 'which minerals are include in Lower System', 'which minerals are include in Higher system', 'which minerals are include in Intermediate system', 'Lattice point', 'Bravais lattice / The 14 Bravais lattices', 'Types of Unit cells', 'Primitive unit cell', 'Body centered unit cell', 'Faced centered unit cell', 'End centered unit cell', 'Where can I put the lattice points?', 'what unit cells are include in Isometric(cubic) cells', 'what unit cells are include in Tetragonal system', 'what unit cells are include in Orthorhombic system', 'what unit cells are include in Rhombohedral system', 'what unit cells are include in Hexagonal system', 'what unit cells are include in Monoclinic system', 'what unit cells are include in Triclinic system', 'what is Bravais Law (with statement)', 'Law of constancy of interfacial angle', 'How do we keep track of the faces of a crystal?', 'Law of rational indices', 'Law of axial-ratio', 'Law of constancy of symmetry', 'Law of constancy of symmetry', 'Law of crystallographic axes', 'types of Symmetry Operations (৭ টার নাম বলতে হবে)', 'which symmetry are include in Basic symmetry operation?', 'which symmetry are include in compound symmetry operation?', 'what is Reflection Symmetry?', 'what is Rotation Symmetry?', 'what is Inversion Symmetry?', 'difference between rotation and reflection symmetry/ rotation symmetry vs Reflection symmetry', 'what is Rotoinversion Symmetry', 'Crystal Classes/32 Crystal classes/ 32 Point group', 'what is Hermann-Mauguin (International) Symbols', 'how to derive the Hermann-Mauguin symbols in crystal classes? (কি কি উপায়ে Herman-Mauguin symbols বের করা হয় সেইটা লিখতে হবে।', 'Hermann-Mauguin (International) Symbols in Rhombic-dipyramidal class', 'Hermann-Mauguin (International) Symbols in Ditetragonal dipyramidal class', 'Triclinic system', 'Monoclinic system', 'Orthorhombic system', 'Tetragonal system', 'Hexagonal system', 'Isometric system', 'describe the classes of Triclinic system', 'describe the classes of Monoclinic system', 'What criteria is involved in dividing the 32 crystal classes into 6/7 crystal systems? ', 'Twinning', 'Twin plane', 'Twin axis', 'Composition surface', 'types of twinning?', 'contact twin?', 'Penetration twin?', 'What are three ways that twinning can originate?', 'Define polymorphism', 'define polymorphic transformations', 'Give several examples of minerals that show polymorphism, being sure to name all of the polymorphs.', 'Describe that three different types of transformations that result in new polymorphs.', 'define metamict mineral', 'define pseudomorphism', 'define mineraloid', 'Difference between Crystallographic axis and coordinate axis', 'polisynthetic twin? (স্যারের লেকচারে twinning এর অধ্যায়ে আছে। পড়ে নিও)', 'cyclic twin? (স্যারের লেকচারে twinning এর অধ্যায়ে আছে। পড়ে নিও)', 'I Love You Sumai ❤❤', 'what is Zone', 'what is zone symbol', 'what is vectorial properties', 'types of vectorial properties', 'properties of continuous vectorial', 'properties of discontinuous vectorial', 'Notation Summary', 'Miller Indices for Directions', 'Miller Indices for Directions', 'Miller Indices for Planes: Procedure', 'Family of Directions <100>,<110>,<111>', 'Importance of Miller Indices ', 'Miller Indices for Hexahedron and Octahedron', 'Miller Bravais Indices for Hexagonal system', 'Crystal Habit', 'types of Crystal Habit', 'systematic way to define crystallographic angles', 'Stereographic Projection', 'component of stereonet', 'X-Ray Crystallography', 'X-rays and the Production of X-rays', 'Continuous and Characteristic X-ray Spectra', 'types of X-ray', "X-ray Diffraction and Bragg's Law", 'The X-ray Powder Method'];
 
-let mathematicsArray = ['test purpose', 'sucess',];
+let mathematicsArray = ['test purpose', 'sucess', 'hafiz', 'test purpose', 'sucess', 'hafiz', 'test purpose', 'sucess', 'hafiz', 'test purpose', 'sucess', 'hafiz', 'test purpose', 'sucess', 'hafiz', 'test purpose', 'sucess', 'hafiz', 'test purpose', 'sucess', 'hafiz', 'test purpose', 'sucess', 'hafiz', 'test purpose', 'hafiz', 'test purpose', 'sucess', 'hafiz', 'test purpose', 'hafiz', 'test purpose', 'sucess', 'hafiz', 'test purpose', 'mamun'];
 
-let opticalMineralogyArray = ['test purpose', 'sucess',];
+let opticalMineralogyArray = ['test purpose', 'sucess'];
 
 let hydrologyArrayByIlliasMahmud = ['test purpose', 'sucess'];
 

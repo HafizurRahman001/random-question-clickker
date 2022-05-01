@@ -21,6 +21,7 @@ const firstModalText = document.getElementById('first_modal_text');
 const secondModalText = document.getElementById('second_modal_text');
 const thirdModalText = document.getElementById('third_modal_text');
 const fourthModalText = document.getElementById('fourth_modal_text');
+const fiveModalTimer = document.getElementById('five_modal_timer');
 
 
 
@@ -37,6 +38,7 @@ const switchButton9 = document.getElementById('switch9');
 const switchButton10 = document.getElementById('switch10');
 const switchButton11 = document.getElementById('switch11');
 const switchButton12 = document.getElementById('switch12');
+const switchButton13 = document.getElementById('switch13');
 
 
 
@@ -78,6 +80,7 @@ const switchFunction = subject => {
             switchButton10.classList.remove('switch_btn_style');
             switchButton11.classList.remove('switch_btn_style');
             switchButton12.classList.remove('switch_btn_style');
+            switchButton13.classList.remove('switch_btn_style');
 
 
             // switch button inner html change after selecting
@@ -95,6 +98,7 @@ const switchFunction = subject => {
             switchButton10.innerHTML = 'Switch';
             switchButton11.innerHTML = 'Switch';
             switchButton12.innerHTML = 'Switch';
+            switchButton13.innerHTML = 'Switch';
 
             //reset display when click new subject
             answerQuestion.innerHTML = '00';
@@ -120,6 +124,7 @@ const switchFunction = subject => {
             switchButton10.classList.remove('switch_btn_style');
             switchButton11.classList.remove('switch_btn_style');
             switchButton12.classList.remove('switch_btn_style');
+            switchButton13.classList.remove('switch_btn_style');
 
 
             // switch button inner html change after selecting
@@ -137,6 +142,7 @@ const switchFunction = subject => {
             switchButton10.innerHTML = 'Switch';
             switchButton11.innerHTML = 'Switch';
             switchButton12.innerHTML = 'Switch';
+            switchButton13.innerHTML = 'Switch';
 
             //reset display when click new subject
             answerQuestion.innerHTML = '00';
@@ -162,6 +168,7 @@ const switchFunction = subject => {
             switchButton10.classList.remove('switch_btn_style');
             switchButton11.classList.remove('switch_btn_style');
             switchButton12.classList.remove('switch_btn_style');
+            switchButton13.classList.remove('switch_btn_style');
 
 
             // switch button inner html change after selecting
@@ -179,6 +186,7 @@ const switchFunction = subject => {
             switchButton10.innerHTML = 'Switch';
             switchButton11.innerHTML = 'Switch';
             switchButton12.innerHTML = 'Switch';
+            switchButton13.innerHTML = 'Switch';
 
             //reset display when click new subject
             answerQuestion.innerHTML = '00';
@@ -204,6 +212,7 @@ const switchFunction = subject => {
             switchButton10.classList.remove('switch_btn_style');
             switchButton11.classList.remove('switch_btn_style');
             switchButton12.classList.remove('switch_btn_style');
+            switchButton13.classList.remove('switch_btn_style');
 
 
             // switch button inner html change after selecting
@@ -221,6 +230,7 @@ const switchFunction = subject => {
             switchButton10.innerHTML = 'Switch';
             switchButton11.innerHTML = 'Switch';
             switchButton12.innerHTML = 'Switch';
+            switchButton13.innerHTML = 'Switch';
 
             //reset display when click new subject
             answerQuestion.innerHTML = '00';
@@ -246,6 +256,7 @@ const switchFunction = subject => {
             switchButton9.classList.remove('switch_btn_style');
             switchButton10.classList.remove('switch_btn_style');
             switchButton11.classList.remove('switch_btn_style');
+            switchButton13.classList.remove('switch_btn_style');
 
 
             // switch button inner html change after selecting
@@ -263,6 +274,7 @@ const switchFunction = subject => {
             switchButton9.innerHTML = 'Switch';
             switchButton10.innerHTML = 'Switch';
             switchButton11.innerHTML = 'Switch';
+            switchButton13.innerHTML = 'Switch';
 
             //reset display when click new subject
             answerQuestion.innerHTML = '00';
@@ -289,6 +301,7 @@ const switchFunction = subject => {
             switchButton9.classList.remove('switch_btn_style');
             switchButton10.classList.remove('switch_btn_style');
             switchButton12.classList.remove('switch_btn_style');
+            switchButton13.classList.remove('switch_btn_style');
 
 
             // switch button inner html change after selecting
@@ -306,6 +319,7 @@ const switchFunction = subject => {
             switchButton9.innerHTML = 'Switch';
             switchButton10.innerHTML = 'Switch';
             switchButton12.innerHTML = 'Switch';
+            switchButton13.innerHTML = 'Switch';
 
             //reset display when click new subject
             answerQuestion.innerHTML = '00';
@@ -331,6 +345,7 @@ const switchFunction = subject => {
             switchButton9.classList.remove('switch_btn_style');
             switchButton11.classList.remove('switch_btn_style');
             switchButton12.classList.remove('switch_btn_style');
+            switchButton13.classList.remove('switch_btn_style');
 
 
             // switch button inner html change after selecting
@@ -348,6 +363,7 @@ const switchFunction = subject => {
             switchButton9.innerHTML = 'Switch';
             switchButton11.innerHTML = 'Switch';
             switchButton12.innerHTML = 'Switch';
+            switchButton13.innerHTML = 'Switch';
 
             //reset display when click new subject
             answerQuestion.innerHTML = '00';
@@ -373,6 +389,7 @@ const switchFunction = subject => {
             switchButton10.classList.remove('switch_btn_style');
             switchButton11.classList.remove('switch_btn_style');
             switchButton12.classList.remove('switch_btn_style');
+            switchButton13.classList.remove('switch_btn_style');
 
 
             // switch button inner html change after selecting
@@ -390,6 +407,7 @@ const switchFunction = subject => {
             switchButton10.innerHTML = 'Switch';
             switchButton11.innerHTML = 'Switch';
             switchButton12.innerHTML = 'Switch';
+            switchButton13.innerHTML = 'Switch';
 
             //reset display when click new subject
             answerQuestion.innerHTML = '00';
@@ -415,6 +433,7 @@ const switchFunction = subject => {
             switchButton10.classList.remove('switch_btn_style');
             switchButton11.classList.remove('switch_btn_style');
             switchButton12.classList.remove('switch_btn_style');
+            switchButton13.classList.remove('switch_btn_style');
 
 
             // switch button inner html change after selecting
@@ -432,6 +451,7 @@ const switchFunction = subject => {
             switchButton10.innerHTML = 'Switch';
             switchButton11.innerHTML = 'Switch';
             switchButton12.innerHTML = 'Switch';
+            switchButton13.innerHTML = 'Switch';
 
             //reset display when click new subject
             answerQuestion.innerHTML = '00';
@@ -457,6 +477,7 @@ const switchFunction = subject => {
             switchButton10.classList.remove('switch_btn_style');
             switchButton11.classList.remove('switch_btn_style');
             switchButton12.classList.remove('switch_btn_style');
+            switchButton13.classList.remove('switch_btn_style');
 
 
             // switch button inner html change after selecting
@@ -474,6 +495,7 @@ const switchFunction = subject => {
             switchButton10.innerHTML = 'Switch';
             switchButton11.innerHTML = 'Switch';
             switchButton12.innerHTML = 'Switch';
+            switchButton13.innerHTML = 'Switch';
 
             //reset display when click new subject
             answerQuestion.innerHTML = '00';
@@ -499,6 +521,7 @@ const switchFunction = subject => {
             switchButton10.classList.remove('switch_btn_style');
             switchButton11.classList.remove('switch_btn_style');
             switchButton12.classList.remove('switch_btn_style');
+            switchButton13.classList.remove('switch_btn_style');
 
 
             // switch button inner html change after selecting
@@ -516,6 +539,7 @@ const switchFunction = subject => {
             switchButton10.innerHTML = 'Switch';
             switchButton11.innerHTML = 'Switch';
             switchButton12.innerHTML = 'Switch';
+            switchButton13.innerHTML = 'Switch';
 
             //reset display when click new subject
             answerQuestion.innerHTML = '00';
@@ -542,6 +566,7 @@ const switchFunction = subject => {
             switchButton10.classList.remove('switch_btn_style');
             switchButton11.classList.remove('switch_btn_style');
             switchButton12.classList.remove('switch_btn_style');
+            switchButton13.classList.remove('switch_btn_style');
 
 
             // switch button inner html change after selecting
@@ -550,6 +575,51 @@ const switchFunction = subject => {
             //other button will be stay switch
             switchButton1.innerHTML = 'Switch';
             switchButton2.innerHTML = 'Switch';
+            switchButton4.innerHTML = 'Switch';
+            switchButton5.innerHTML = 'Switch';
+            switchButton6.innerHTML = 'Switch';
+            switchButton7.innerHTML = 'Switch';
+            switchButton8.innerHTML = 'Switch';
+            switchButton9.innerHTML = 'Switch';
+            switchButton10.innerHTML = 'Switch';
+            switchButton11.innerHTML = 'Switch';
+            switchButton12.innerHTML = 'Switch';
+            switchButton13.innerHTML = 'Switch';
+
+            //reset display when click new subject
+            answerQuestion.innerHTML = '00';
+            showData.innerHTML = 'Here You Can Show Random Question....';
+
+            clearInterval(timer);    //close the previous timer when click a new subject
+            setTimerUpdate();    //set new timer when click a new subject
+
+            break;
+        case 'geophysics':
+            switchButton13.classList.add('switch_btn_style');
+
+
+            //remove style from others id
+            switchButton1.classList.remove('switch_btn_style');
+            switchButton2.classList.remove('switch_btn_style');
+            switchButton3.classList.remove('switch_btn_style');
+            switchButton4.classList.remove('switch_btn_style');
+            switchButton5.classList.remove('switch_btn_style');
+            switchButton6.classList.remove('switch_btn_style');
+            switchButton7.classList.remove('switch_btn_style');
+            switchButton8.classList.remove('switch_btn_style');
+            switchButton9.classList.remove('switch_btn_style');
+            switchButton10.classList.remove('switch_btn_style');
+            switchButton11.classList.remove('switch_btn_style');
+            switchButton12.classList.remove('switch_btn_style');
+
+
+            // switch button inner html change after selecting
+            switchButton13.innerHTML = 'Selected'
+
+            //other will be stay switch
+            switchButton1.innerHTML = 'Switch';
+            switchButton2.innerHTML = 'Switch';
+            switchButton3.innerHTML = 'Switch';
             switchButton4.innerHTML = 'Switch';
             switchButton5.innerHTML = 'Switch';
             switchButton6.innerHTML = 'Switch';
@@ -777,7 +847,25 @@ const switchFunction = subject => {
         //remove the disabled buttons
         askQuestionBtn.disabled = false;
 
-    } else {
+    } else if (subject === 'geophysics') {
+        curElement = 0;    // set the predefined curElement to 0 as if the previous curElement value is alternate with 0
+        SubjectArray = geoPhysicsArray;     //set the declaring array to the predefined SubjectArray array
+
+        // get the index from the crystallographyArray and set it to the 'arr' array
+        for (i of geoPhysicsArray) {
+            let indexNumberOfCrystallographyArray = geoPhysicsArray.indexOf(i);
+            arr = [];
+            arr = [indexNumberOfCrystallographyArray];
+        };
+
+        //show subject name to the browser
+        showSubject.innerHTML = subject;
+
+        //remove the disabled buttons
+        askQuestionBtn.disabled = false;
+
+    }
+    else {
         SubjectArray = [];
     };
 
@@ -791,6 +879,7 @@ const switchFunction = subject => {
 
 let curElement = 0;
 let arr = [];
+
 
 let chartTimeToEmailArray = [];
 let chartTimerToEmailArray = [];
@@ -875,7 +964,7 @@ const timeSet = () => {
     let h = date.getHours();
     let m = date.getMinutes();
     let s = date.getSeconds();
-    let session = 'AM';
+    let session = h >= 12 ? 'PM' : 'AM';
 
     //condition for 0 hours
     if (h == 0) {
@@ -885,8 +974,11 @@ const timeSet = () => {
     //condition for 24 hours
     if (h > 12) {
         h = h - 12;
-        session = 'PM';
-    }
+        // session = 'PM'
+    };
+
+
+
 
     // conditions for double digit
     h = (h < 10) ? "0" + h : h;
@@ -989,6 +1081,26 @@ const sendmail = () => {
     const randomQuestionClickerWebsite = "https://random-question-clicker.netlify.app/";    //my website link
 
 
+
+    // display a timer when the internet is so slow
+    function startTimer(duration) {
+        var timer = duration, minutes, seconds;
+        setInterval(function () {
+            minutes = parseInt(timer / 60, 10);
+            seconds = parseInt(timer % 60, 10);
+
+            minutes = minutes < 10 ? "0" + minutes : minutes;
+            seconds = seconds < 10 ? "0" + seconds : seconds;
+
+            fiveModalTimer.innerHTML = minutes + ":" + seconds;
+            if (--timer < 0) {
+                timer = duration;
+            }
+        }, 1000);
+    }
+
+
+
     firstModalText.innerHTML = 'Waiting for a moment...';
     //show the message on the modal after few seconds
     setTimeout(() => {
@@ -996,14 +1108,23 @@ const sendmail = () => {
         secondModalText.innerHTML = 'Your information is on process...';
 
     }, 300);
+
     setTimeout(() => {
         thirdModalText.classList.add('animate__animated', 'animate__backInUp');    //add animated css from https://animate.style/
         thirdModalText.innerHTML = '<br/>It may take some time.'
     }, 300);
+
     setTimeout(() => {
         fourthModalText.classList.add('animate__animated', 'animate__backInUp');    //add animated css from https://animate.style/
-        fourthModalText.innerHTML = '<br/>Your Internet is slow. Please keep patients.'
+        fourthModalText.innerHTML = `<br/>Internet is slow. Please Waiting...`;
+
+        startTimer(15);
     }, 2000);
+
+    // the modal countdown timer background is show 1 second before the timer starts. for fixing that problem we will add the background color class after 1 second.
+    setTimeout(() => {
+        fiveModalTimer.classList.add('five_modal_timer');
+    }, 3000);
 
 
 
@@ -1068,7 +1189,7 @@ const sendmail = () => {
     let chartLinkToEmail__14;
     let chartLinkToEmail__15;
 
-
+    let testArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 11, 12, 13, 14, 15]
 
 
     // ------------------------------------chartLinkToEmail condition (start)--------------------------
@@ -1260,7 +1381,7 @@ const sendmail = () => {
             Subject: `Congradulations!! You have successfully passed ${SubjectArray.length} questions.`,
             Body: `<p style='font-size:16px'>Dear ${userEmail}! thank you very much for trying the <a href=${randomQuestionClickerWebsite}>random question clicker</a> website. Your performance is given below:</p><br/>
 
-            <span style="color: blue;font-size:15px">Your Performance Records:</span>
+            <span style="color: blue;font-size:15px;background:chocolate;color:white;display:inline-block;margin-bottom:4px;padding:4px 7px;">Your Performance Records:</span>
 
             <table width="100%"  border='1px' collapsing='0' style='border-collapse: collapse;'>
             <thead>
@@ -1283,18 +1404,22 @@ const sendmail = () => {
                 <td style='padding:5px 12px;font-weight:bold;'>${displayMaximumSecondsToStandardTimeShape}</td>
               </tr>
               <tr>
-                <td style='padding:5px 12px;background:linear-gradient(#cbcbcb,#e4e4e4,#b9b9b9);font-weight:bold'>Finished At</td>
-                <td style='padding:5px 12px;background:linear-gradient(#cbcbcb,#e4e4e4,#b9b9b9);font-weight:bold'>${sendTimeToMail} ${sendSessionToMail}</td>
+              <td style='padding:5px 12px;background:linear-gradient(#cbcbcb,#e4e4e4,#b9b9b9);font-weight:bold'>Started At</td>
+              <td style='padding:5px 12px;background:linear-gradient(#cbcbcb,#e4e4e4,#b9b9b9);font-weight:bold'>${chartTimeToEmailArray[0]}</td>
+            </tr>
+              <tr>
+                <td style='padding:5px 12px;font-weight:bold'>Finished At</td>
+                <td style='padding:5px 12px;font-weight:bold'>${sendTimeToMail} ${sendSessionToMail}</td>
               </tr>
               <tr>
-                <td style='padding:5px 12px;font-weight:bold'>Total Time</td>
-                <td style='padding:5px 12px;font-weight:bold;'>${sendTimerToMail} hour(s)</td>
+                <td style='padding:6px 12px;background:linear-gradient(#cbcbcb,#e4e4e4,#b9b9b9);font-weight:bold'>Total Time</td>
+                <td style='padding:6px 12px;background:linear-gradient(#cbcbcb,#e4e4e4,#b9b9b9);font-weight:bold;'>${sendTimerToMail} hour(s)</td>
               </tr>
             </tbody>
           </table> <br/>`+
                 `
                 <div style="background:#e6e6e66b;border: 2px dashed gray;padding: 3px 10px;border-radius: 5px;">
-                <h2 style='margin-bottom:10px; margin-top:0px;font-size:20px;color:#FF4040;'>Chart(s) According to your performance:</h2>
+                <h2 style='margin-bottom:10px; margin-top:0px;font-size:18px;color:#FF4040;'>Chart(s) According to your performance:</h2>
                 <h3 style='margin:0;'>What the Chart is Describing?</h3>
                 <p style='margin:0;font-size:17px;font-family:"Roboto";'>The chart describes that how much time <span style='color:#FF4040'>(as seconds)</span> you spend for going through from one question to another and it also describes that what was the actual time <span style='color:#FF4040'>(as hh:mm:ss)</span> from going to one question to another. We oriented the chart as a bar chart where spending time <span style='color:#FF4040'>(as seconds)</span> is placed about the <span style='font-weight:bold'>'Y'</span> axis of the chart and actual time <span style='color:#FF4040'>(hh:mm:ss)</span> is placed about the <span style='font-weight:bold'>'X'</span> axis. It might divided the chart in many more on the basis of a lots of data. </p>
                 </div> ` +
@@ -1345,7 +1470,7 @@ const sendmail = () => {
                 <h3 style="font-size:19px;color: #080808;background:yellow;padding-left: 7px;">${chartVariable__15 === undefined ? ' ' : chartVariable__15}</h3>
                 <img style=width:97%;border: 2px solid #70707040;border-radius: 7px;padding-left: 10px;padding-bottom: 10px;${chartVariable__15 === undefined ? 'display:none' : 'display:block'}' src='${chartLinkToEmail__15}' alt="">
                 </div>`+
-                `<span style='color:#FF4040;font-size:19px;color:#ff4040;font-weight:600;'>All questions you just have finished are given below:</span>` +
+                `<span style='color:#FF4040;font-size:19px;color:#ff4040;font-weight:600;'>All questions you going through are given below:</span>` +
                 SubjectArray.map((question, index) => {
                     return '<br/> <b> Question-</b>' + `<b>${(index + 1)}:</b>` + ' ' + `${question.slice(0, -2)}`
                 }) + `<p style='font-size:15px;color:#205acc'>Thanks for your patient. Is this website is really helpful? If yeah, then don't forget to give a reply with your review.</p>`
@@ -1389,7 +1514,9 @@ let physics_2_Array = ['test purpose', 'sucess'];
 
 let physics_3_Array = ['test purpose', 'sucess'];
 
-let programmingArray = ['test purpose', 'sucess'];
+let programmingArray = ['hafiz', 'sumai', 'mamun'];
 
 let stratigraphyArray = ['test purpose', 'success'];
+
+let geoPhysicsArray = ['what is geophysics ?', 'tabulate the methods of geophysics ?', 'tabulate the geophysical surveying application ?', 'GPR(short note)', 'difference between gravity and gravitation.', 'difference between geoid and spheroid.', 'basic theory of gravity.', ' gravity unit.', 'define Gravity, geoid and spheroid.', 'isotactic model(short note)', 'define Rheology and creep.', 'how does earth shape influence gravity ?', ' define Gravimeter.', ' difference between stable gravimeters and unstable gravimeters.', ' how  does Scientists measure the gravity ?', ' LaCoste - Romberg Gravimeter and Worden Gravimeter/’s principle.', 'Why we do gravity reduction ?', ' why we do gravity correction ?', ' what is gravity anomaly ?', ' what is rock density ?', ' Absolute gravimeter/’s Advantages and Disadvantages', ' what is causative body ?', ' what kind of  gravity anomaly happen ?', ' How did do the gravity surveying ?', ' what is gravity reduction ?', ' why does the rock density vary ?', 'How to vary gravity with the rock density.', ' Density variation with the Netelson method.', ' what magnetic field ?', ' what Magnetic Field Strength ?', ' what Intensity of Magnetization ?', ' what Magnetic Induction ?', 'what Magnetic  susceptibility ?', ' what Magnetic permeability ?', ' what Magnetic Potential ?', ' what Magnetic force ?', ' B – H relationships / B - H Relationship through Hysteresis Loop / magnetisms of a matrial through Hysteresis Loop / define the remenent magnetisms with proper diagram / Magnetic Flux and magnetic field intensity relationships through Hysteresis Loop.', ' Significance to Paleomagnetic study(with B - H relationship).', ' explain the Nature of Geomagnetic field / geomagnetic field of the earth / types of geomagnetic field of the earth.', ' Explain the  Elements of the Earth’s Magnetic Field / earth magnetic component ?', ' Explain the Origin of the geomagnetic field.', ' Explain the Variations of earths magnetic field.', ' Diurnal variation.', 'Difference between the secular variation and diurnal variation.', ' Classification of rocks and minerals in terms of magnetism.', ' Types of Ferromagnetic Materials.', ' Differences Between Dia, Para and Ferro magnetic minerals.', ' what is Curie temperature ?', 'difference between DiaMagnatism and ParaMagnatism.', ' Differences Between Magnetic Susceptibility and Magnetic Induction.', ' Differences Between Magnetic Field Strength and Magnetic Induction.', ' Remanent magnetization ?', ' Differences Between Intensity of Magnetization and Magnetic Induction.', ' How do rocks acquire their magnetism ? / Types of Remanent/Residual magnetization.', 'explain the Types or Causes of remanent magnetization ? ', ' Names of magnetic instrument.', ' Types of Magnetic surveys.', ' Ground Magnetic survey procedure Advantages and Disadvantages', ' Aeromagnetic survey procedure Advantages and Disadvantages', ' Magnetic survey to sea Advantages and Disadvantages', ' Applications of Magnetic surveys', ' What is telluric current ?', ' what origin of telluric current ?', ' How do The field procedure of MT survey ?', ' what is the advantages of MT survey', ' Difference between Membrane polarization and Electrode polarization.', ' what is The principle of EM surveying ?',];
 

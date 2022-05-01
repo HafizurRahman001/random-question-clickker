@@ -224,6 +224,9 @@ tr {
   cursor: default;
   font-weight: 600;
 }
+#ss {
+  color: red;
+}
 #show_session {
   font-size: 14px;
   color: #01fff3;
@@ -236,6 +239,10 @@ tr {
   color: red;
   font-weight: 500;
   padding: 0 5px;
+}
+
+#time_that_need_to_show_chart_X_axis {
+  display: none;
 }
 
 /* customize bootstrap css style */
@@ -290,6 +297,13 @@ input:focus {
 #fourth_modal_text {
   color: red;
 }
+.five_modal_timer {
+  background: #ffef38;
+  padding: 0 7px;
+  font-weight: 600;
+  border: 1px solid transparent;
+  border-radius: 5px;
+}
 
 /* media query for all device */
 
@@ -339,7 +353,7 @@ input:focus {
     padding: 5px 0px;
   }
   .modal-body {
-    font-size: 22px !important;
+    font-size: 21px !important;
   }
   #show_session {
     font-size: 9px;

@@ -1419,7 +1419,7 @@ const sendmail = () => {
           </table> <br/>`+
                 `
                 <div style="background:#e6e6e66b;border: 2px dashed gray;padding: 3px 10px;border-radius: 5px;">
-                <h2 style='margin-bottom:10px; margin-top:0px;font-size:18px;color:#FF4040;'>Chart(s) According to your performance:</h2>
+                <h2 style='margin-bottom:10px; margin-top:0px;font-size:18px;color:#FF4040;'>Charts According to your performance:</h2>
                 <h3 style='margin:0;'>What the Chart is Describing?</h3>
                 <p style='margin:0;font-size:17px;font-family:"Roboto";'>The chart describes that how much time <span style='color:#FF4040'>(as seconds)</span> you spend for going through from one question to another and it also describes that what was the actual time <span style='color:#FF4040'>(as hh:mm:ss)</span> from going to one question to another. We oriented the chart as a bar chart where spending time <span style='color:#FF4040'>(as seconds)</span> is placed about the <span style='font-weight:bold'>'Y'</span> axis of the chart and actual time <span style='color:#FF4040'>(hh:mm:ss)</span> is placed about the <span style='font-weight:bold'>'X'</span> axis. It might divided the chart in many more on the basis of a lots of data. </p>
                 </div> ` +
@@ -1473,7 +1473,7 @@ const sendmail = () => {
                 `<span style='color:#FF4040;font-size:19px;color:#ff4040;font-weight:600;'>All questions you going through are given below:</span>` +
                 SubjectArray.map((question, index) => {
                     return '<br/> <b> Question-</b>' + `<b>${(index + 1)}:</b>` + ' ' + `${question.slice(0, -2)}`
-                }) + `<p style='font-size:15px;color:#205acc'>Thanks for your patient. Is this website is really helpful? If yeah, then don't forget to give a reply with your review.</p>`
+                }) + `<p style='font-size:18px;color:#cc206c'>Thanks for your patient. Is this website is really helpful? If yeah, then don't forget to give a reply with your review.</p>`
 
         }).then(message => {
             if (message === 'OK') {

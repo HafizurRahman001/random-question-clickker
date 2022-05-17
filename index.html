@@ -288,7 +288,37 @@
                 <h3>Subject: <span id="show_subject">Choose any subject
                         from above</span></h3>
             </div>
-            <h6>Ans: <span style="color:red;" id="ans_question">00</span> <span>Page(s)</span></h6>
+
+            <div class="show__rnadom__question__answer">
+                <h6>Sheet: <span style="color:red;" id="ans_question">00</span> <span>Page(s)</span></h6>
+
+                <h6 style='padding-left:18px;' data-bs-toggle="modal" data-bs-target="#staticBackdrop2">Answer:
+                    <a href="##">Click here</a>
+                </h6>
+            </div>
+
+            <!-- scroll modal for showing random question answer-->
+            <div class="  modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false"
+                tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class=" modal-dialog modal-dialog-scrollable modal-dialog modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="staticBackdropLabel">Answer Sheet</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div id='random__question__answer' style='font-size: 18px;' class="modal-body">
+                            No available question for showing. Please select a question first.
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <!-- <button type="button" class="btn btn-primary">Understood</button> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Show the random question in table -->
             <div class="table_result">
                 <table class="table table-dark table-striped">
                     <thead>
@@ -314,7 +344,7 @@
             <button class="btn shadow-none" id="timer">Timer here..</button>
 
             <!-- modal declaring -->
-            <!-- Button trigger modal -->
+            <!-- Button trigger modal automatic in javascript-->
             <button hidden id='finish' type="button" class="btn btn-primary" data-bs-toggle="modal"
                 data-bs-target="#exampleModal">
                 Launch demo modal

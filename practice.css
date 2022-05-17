@@ -305,6 +305,11 @@ input:focus {
   border-radius: 5px;
 }
 
+.show__rnadom__question__answer {
+  display: flex;
+  align-items: center;
+}
+
 /* media query for all device */
 
 @media only screen and (max-width: 688px) {
